@@ -1,0 +1,3 @@
+# Projeto de Vending Machine
+
+Implementação de software de controle para uma vending machine da disciplina [PMR3402 - Sistemas embarcados](https://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=PMR3402&codcur=3112&codhab=3000)
