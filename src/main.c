@@ -9,10 +9,18 @@
  */
 
 #include <stdio.h>
+#include "definicoes_sistema.h"
 #include "atuadores.h"
 #include "display.h"
 #include "teclado.h"
 #include "utils.h"
+
+void machina_init(){
+    atuadores_init();
+    display_init();
+    teclado_init();
+    trava_init();
+}
 
 int main(){
 

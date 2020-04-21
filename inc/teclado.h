@@ -11,6 +11,13 @@
 #ifndef __TECLADO_H__
 #define __TECLADO_H__
 
+#include <stdint.h>
+
+/**
+ * @brief Função de inicialização do componente
+ *
+ */
+void teclado_init();
 
 /**
  * @brief

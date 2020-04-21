@@ -10,9 +10,11 @@
 
 #include "atuadores.h"
 
-void atuadores_libera_produto(uint8_t prod_id){
+void atuadores_init() {
+    return;
+}
 
+void atuadores_libera_produto(uint8_t prod_id) {
     printf("Produto de código #%i liberado!\n", prod_id);
     printf("Obrigado e volte sempre!\n");
-
 }

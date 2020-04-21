@@ -15,6 +15,12 @@
 #include <stdio.h>
 
 /**
+ * @brief Função de inicialização do componente
+ *
+ */
+void atuadores_init();
+
+/**
  * @brief Envia o comando de liberação do produto indicado
  *
  * @param prod_id Id do produto a ser liberado

@@ -13,6 +13,12 @@
 #include <stdint.h>
 
 /**
+ * @brief Função de inicialização do componente
+ *
+ */
+void display_init();
+
+/**
  * @brief Exibe uma mensagem para o usuário por meio do display
  *
  * @param msg Mensagem a ser mostrada
