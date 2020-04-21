@@ -13,6 +13,7 @@ doxygen Doxyfile
 if [ $? == 0 ]; then
     cd docs/Doxygen/html/
     git checkout gh-pages
+    git pull
     git add .
     git commit -m "Updating doxygen docs for rev ${last_rev}"
     git push origin gh-pages
