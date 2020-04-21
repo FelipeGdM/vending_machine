@@ -1,0 +1,19 @@
+#!/bin/bash
+# post-commit hook que automaticamente compila a documentação e, se não houver
+# erros, dá commit e push no gh-pages
+# Ref: https://github.com/piLaboratory/TWoLife/wiki/Documenta%C3%A7%C3%A3o-Doxygen
+set -e
+
+[[ "$(git symbolic-ref --short HEAD)" == "master" ]] || exit 0
+
+last_rev="$(git log --pretty="%h" --no-merges -1)"
+
+doxygen Doxyfile
+
+if [ $? == 0 ]; then
+    cd docs/Doxygen/html/
+    git checkout gh-pages
+    git add .
+    git commit -m "Updating doxygen docs for rev ${last_rev}"
+    git push origin gh-pages
+fi
