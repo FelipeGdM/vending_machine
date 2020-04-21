@@ -56,3 +56,9 @@ vending_machine
 
 # Local files folder
 local
+
+# Doxygen files
+Doxygen
+
+# Arquivos do vscode
+.vscode
