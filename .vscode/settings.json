@@ -1,0 +1,26 @@
+{
+    "doxdocgen.file.copyrightTag": [
+        "@copyright MIT License - Copyright (c) {year}"
+    ],
+    "doxdocgen.generic.authorEmail": "felipegmelo@usp.br",
+    "doxdocgen.file.fileOrder": [
+        "file",
+        "author",
+        "brief",
+        "date",
+        "empty",
+        "copyright",
+        "empty",
+        "custom"
+    ],
+    "files.associations": {
+        "*.html": "django-html",
+        "*.world": "xml",
+        "atuadores.h": "c"
+    },
+    "C_Cpp.intelliSenseEngineFallback": "Enabled",
+    "clang.cxxflags": [
+        "-Iinc"
+    ]
+
+}
