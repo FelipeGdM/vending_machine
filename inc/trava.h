@@ -33,7 +33,7 @@ static bool trava_aberta;
  * @brief Função de inicialização do componente
  *
  */
-void init_trava();
+void trava_init();
 
 /**
  * @memberof Trava
