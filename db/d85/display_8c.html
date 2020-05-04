@@ -92,7 +92,8 @@ $(document).ready(function(){initNavTree('db/d85/display_8c.html','../../');});
 </div><div class="textblock"><div class="dynheader">
 Gráfico de dependência de inclusões para display.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9c/display_8c__incl.svg" width="208" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9c/display_8c__incl.svg" width="208" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="../../db/d85/display_8c_source.html">Vá para o código-fonte deste arquivo.</a></p>
@@ -100,10 +101,8 @@ Gráfico de dependência de inclusões para display.c:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funções</h2></td></tr>
 <tr class="memitem:a8d41c12af4f6e6faad84e1f21f99b3e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/display_8c.html#a8d41c12af4f6e6faad84e1f21f99b3e1">display_init</a> ()</td></tr>
-<tr class="memdesc:a8d41c12af4f6e6faad84e1f21f99b3e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função de inicialização do componente.  <a href="#a8d41c12af4f6e6faad84e1f21f99b3e1">Mais...</a><br /></td></tr>
 <tr class="separator:a8d41c12af4f6e6faad84e1f21f99b3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab40bbdd654d01b8ee4e3318f96addb0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/display_8c.html#ab40bbdd654d01b8ee4e3318f96addb0d">display_exibe_msg</a> (char *msg, int8_t <a class="el" href="../../d5/d60/utils_8h.html#a4f1bd13344d7277e1740cb9279f54293">len</a>)</td></tr>
-<tr class="memdesc:ab40bbdd654d01b8ee4e3318f96addb0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exibe uma mensagem para o usuário por meio do display.  <a href="#ab40bbdd654d01b8ee4e3318f96addb0d">Mais...</a><br /></td></tr>
 <tr class="separator:ab40bbdd654d01b8ee4e3318f96addb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Funções</h2>
@@ -133,23 +132,9 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Exibe uma mensagem para o usuário por meio do display. </p>
-<dl class="params"><dt>Parâmetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msg</td><td>Mensagem a ser mostrada </td></tr>
-    <tr><td class="paramname">len</td><td>Tamanho da mensagem </td></tr>
-  </table>
-  </dd>
-</dl>
-
 <p class="definition">Definição na linha <a class="el" href="../../db/d85/display_8c_source.html#l00018">18</a> do arquivo <a class="el" href="../../db/d85/display_8c_source.html">display.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                              {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="../../d5/d60/utils_8h.html#a4f1bd13344d7277e1740cb9279f54293">len</a> &gt;= 0) {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        putchar(*msg++);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d5/d60/utils_8h.html#a4f1bd13344d7277e1740cb9279f54293">len</a>--;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div><div class="ttc" id="utils_8h_html_a4f1bd13344d7277e1740cb9279f54293"><div class="ttname"><a href="../../d5/d60/utils_8h.html#a4f1bd13344d7277e1740cb9279f54293">len</a></div><div class="ttdeci">#define len(arr)</div><div class="ttdoc">Returns the length of statically defined arrays. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d60/utils_8h_source.html#l00047">utils.h:47</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Este é o diagrama das funções que utilizam esta função:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d85/display_8c_ab40bbdd654d01b8ee4e3318f96addb0d_icgraph.svg" width="272" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a8d41c12af4f6e6faad84e1f21f99b3e1"></a>
@@ -167,15 +152,8 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Função de inicialização do componente. </p>
-
 <p class="definition">Definição na linha <a class="el" href="../../db/d85/display_8c_source.html#l00014">14</a> do arquivo <a class="el" href="../../db/d85/display_8c_source.html">display.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                    {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div></div><!-- fragment --><div class="dynheader">
-Este é o diagrama das funções que utilizam esta função:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../db/d85/display_8c_a8d41c12af4f6e6faad84e1f21f99b3e1_icgraph.svg" width="296" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
-
+<div class="fragment"><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                    {</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">return</span>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -184,7 +162,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../db/d85/display_8c.html">display.c</a></li>
-    <li class="footer">Gerado em Terça, 21 de Abril de 2020 21:26:06 para Vending Machine por
+    <li class="footer">Gerado em Segunda, 4 de Maio de 2020 14:47:22 para Vending Machine por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

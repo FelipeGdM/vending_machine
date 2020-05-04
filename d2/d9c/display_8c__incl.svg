@@ -17,7 +17,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="../../d4/d68/display_8h.html" target="_top" xlink:title="Métodos para controle da interface de texto da vending machine. ">
+<g id="a_node2"><a xlink:href="../../d4/d68/display_8h.html" target="_top" xlink:title="display.h">
 <polygon fill="none" stroke="#000000" points="0,-56.5 0,-75.5 71,-75.5 71,-56.5 0,-56.5"/>
 <text text-anchor="middle" x="35.5" y="-63.5" font-family="Fira Code" font-size="10.00" fill="#000000">display.h</text>
 </a>

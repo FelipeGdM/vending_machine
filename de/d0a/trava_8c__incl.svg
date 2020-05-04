@@ -17,7 +17,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="../../d5/dc1/trava_8h.html" target="_top" xlink:title="Métodos de interface com a trava de manutenção da vending machine. ">
+<g id="a_node2"><a xlink:href="../../d5/dc1/trava_8h.html" target="_top" xlink:title="trava.h">
 <polygon fill="none" stroke="#000000" points="12,-56.5 12,-75.5 71,-75.5 71,-56.5 12,-56.5"/>
 <text text-anchor="middle" x="41.5" y="-63.5" font-family="Fira Code" font-size="10.00" fill="#000000">trava.h</text>
 </a>

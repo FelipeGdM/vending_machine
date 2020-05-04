@@ -17,7 +17,7 @@
 <!-- Node1 -->
 <g id="node2" class="node">
 <title>Node1</title>
-<g id="a_node2"><a xlink:href="../../da/d79/atuadores_8h.html" target="_top" xlink:title="Métodos para controle dos atuadores da vending machine. ">
+<g id="a_node2"><a xlink:href="../../da/d79/atuadores_8h.html" target="_top" xlink:title="atuadores.h">
 <polygon fill="none" stroke="#000000" points="31,-56.5 31,-75.5 114,-75.5 114,-56.5 31,-56.5"/>
 <text text-anchor="middle" x="72.5" y="-63.5" font-family="Fira Code" font-size="10.00" fill="#000000">atuadores.h</text>
 </a>

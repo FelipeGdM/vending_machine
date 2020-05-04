@@ -1,7 +1,7 @@
 <map id="src/main.c" name="src/main.c">
 <area shape="rect" id="node3" href="$df/da2/definicoes__sistema_8h.html" title="definicoes_sistema.h" alt="" coords="171,80,353,107"/>
-<area shape="rect" id="node5" href="$da/d79/atuadores_8h.html" title="Métodos para controle dos atuadores da vending machine. " alt="" coords="36,80,147,107"/>
-<area shape="rect" id="node6" href="$d4/d68/display_8h.html" title="Métodos para controle da interface de texto da vending machine. " alt="" coords="377,80,472,107"/>
-<area shape="rect" id="node7" href="$dc/d17/teclado_8h.html" title="Métodos para interação com teclado de entrada do usuário. " alt="" coords="496,80,591,107"/>
+<area shape="rect" id="node5" href="$da/d79/atuadores_8h.html" title="atuadores.h" alt="" coords="36,80,147,107"/>
+<area shape="rect" id="node6" href="$d4/d68/display_8h.html" title="display.h" alt="" coords="377,80,472,107"/>
+<area shape="rect" id="node7" href="$dc/d17/teclado_8h.html" title="teclado.h" alt="" coords="496,80,591,107"/>
 <area shape="rect" id="node8" href="$d5/d60/utils_8h.html" title="Mathematic utilitary functions globally available. " alt="" coords="615,80,693,107"/>
 </map>

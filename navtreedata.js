@@ -7,6 +7,7 @@ var NAVTREE =
       [ "Índice dos Componentes", "classes.html", null ],
       [ "Componentes Membros", "functions.html", [
         [ "Todos", "functions.html", null ],
+        [ "Funções", "functions_func.html", null ],
         [ "Variáveis", "functions_vars.html", null ]
       ] ]
     ] ],

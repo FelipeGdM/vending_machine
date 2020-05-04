@@ -41,7 +41,7 @@
 <!-- Node3 -->
 <g id="node4" class="node">
 <title>Node3</title>
-<g id="a_node4"><a xlink:href="../../dc/d17/teclado_8h.html" target="_top" xlink:title="Métodos para interação com teclado de entrada do usuário. ">
+<g id="a_node4"><a xlink:href="../../dc/d17/teclado_8h.html" target="_top" xlink:title="teclado.h">
 <polygon fill="none" stroke="#000000" points="116,-56.5 116,-75.5 187,-75.5 187,-56.5 116,-56.5"/>
 <text text-anchor="middle" x="151.5" y="-63.5" font-family="Fira Code" font-size="10.00" fill="#000000">teclado.h</text>
 </a>

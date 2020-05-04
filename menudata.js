@@ -5,6 +5,7 @@ var menudata={children:[
 {text:"Índice dos Componentes",url:"classes.html"},
 {text:"Componentes Membros",url:"functions.html",children:[
 {text:"Todos",url:"functions.html"},
+{text:"Funções",url:"functions_func.html"},
 {text:"Variáveis",url:"functions_vars.html"}]}]},
 {text:"Arquivos",url:"files.html",children:[
 {text:"Lista de Arquivos",url:"files.html"},

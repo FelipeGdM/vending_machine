@@ -1,5 +1,5 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$dd/d4e/atuadores_8c.html#abc1cd7f170c8442f5a7cb93353f98a1b" title="Envia o comando de liberação do produto indicado. " alt="" coords="108,5,323,32"/>
-<area shape="rect" id="node3" href="$db/d85/display_8c.html#ab40bbdd654d01b8ee4e3318f96addb0d" title="Exibe uma mensagem para o usuário por meio do display. " alt="" coords="136,56,295,83"/>
-<area shape="rect" id="node4" href="$df/d99/teclado_8c.html#accc923a97665be4f8f473de70bf3641e" title="Lê o código de produto digitado pelo usuário. " alt="" coords="132,107,299,133"/>
+<area shape="rect" id="node2" href="$d1/d1b/classAtuadores.html#abc1cd7f170c8442f5a7cb93353f98a1b" title="Envia o comando de liberação do produto indicado. " alt="" coords="132,5,315,47"/>
+<area shape="rect" id="node3" href="$d6/dd6/classDisplay.html#ab40bbdd654d01b8ee4e3318f96addb0d" title="Exibe uma mensagem para o usuário por meio do display. " alt="" coords="108,71,339,98"/>
+<area shape="rect" id="node4" href="$df/d99/teclado_8c.html#accc923a97665be4f8f473de70bf3641e" title="teclado_le_prod_id" alt="" coords="140,122,307,149"/>
 </map>

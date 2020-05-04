@@ -90,7 +90,7 @@ var sectionId = 'dynsection-0';
 <!-- Node4 -->
 <g id="node5" class="node">
 <title>Node4</title>
-<g id="a_node5"><a xlink:href="../../da/d79/atuadores_8h.html" target="_top" xlink:title="Métodos para controle dos atuadores da vending machine. ">
+<g id="a_node5"><a xlink:href="../../da/d79/atuadores_8h.html" target="_top" xlink:title="atuadores.h">
 <polygon fill="none" stroke="#000000" points="23,-56.5 23,-75.5 106,-75.5 106,-56.5 23,-56.5"/>
 <text text-anchor="middle" x="64.5" y="-63.5" font-family="Fira Code" font-size="10.00" fill="#000000">atuadores.h</text>
 </a>
@@ -105,7 +105,7 @@ var sectionId = 'dynsection-0';
 <!-- Node5 -->
 <g id="node6" class="node">
 <title>Node5</title>
-<g id="a_node6"><a xlink:href="../../d4/d68/display_8h.html" target="_top" xlink:title="Métodos para controle da interface de texto da vending machine. ">
+<g id="a_node6"><a xlink:href="../../d4/d68/display_8h.html" target="_top" xlink:title="display.h">
 <polygon fill="none" stroke="#000000" points="279,-56.5 279,-75.5 350,-75.5 350,-56.5 279,-56.5"/>
 <text text-anchor="middle" x="314.5" y="-63.5" font-family="Fira Code" font-size="10.00" fill="#000000">display.h</text>
 </a>
@@ -120,7 +120,7 @@ var sectionId = 'dynsection-0';
 <!-- Node6 -->
 <g id="node7" class="node">
 <title>Node6</title>
-<g id="a_node7"><a xlink:href="../../dc/d17/teclado_8h.html" target="_top" xlink:title="Métodos para interação com teclado de entrada do usuário. ">
+<g id="a_node7"><a xlink:href="../../dc/d17/teclado_8h.html" target="_top" xlink:title="teclado.h">
 <polygon fill="none" stroke="#000000" points="368,-56.5 368,-75.5 439,-75.5 439,-56.5 368,-56.5"/>
 <text text-anchor="middle" x="403.5" y="-63.5" font-family="Fira Code" font-size="10.00" fill="#000000">teclado.h</text>
 </a>
