@@ -17,6 +17,18 @@
  *****************************************/
 
 /**
+ * @brief Imprime na tela uma quantia de dinheiro formatada com R$
+ * 
+ */
+#define dinheiro_print(dinheiro) printf("R$ %hhu.%02hhu", dinheiro.reais, dinheiro.centavos)
+
+/**
+ * @brief Imprime na tela uma quantia de dinheiro a partir de um ponteiro 
+ * formatada com R$
+ */
+#define p_dinheiro_print(dinheiro) printf("R$ %hhu.%02hhu", dinheiro->reais, dinheiro->centavos)
+
+/**
  * @brief Returns x absolute value.
  */
 #define abs(x) ((x) > 0 ? (x) : -(x))
