@@ -1,5 +1,6 @@
 /**
  * @file main.c
+ * @class Machina
  * @author Felipe Gomes de Melo <felipegmelo@usp.br>
  * @brief
  * @date 04/2020
@@ -15,6 +16,12 @@
 #include "teclado.h"
 #include "utils.h"
 
+/**
+ * @memberof Machina
+ *
+ * @brief Inicializa componentes da vending machine
+ *
+ */
 void machina_init(){
     atuadores_init();
     display_init();

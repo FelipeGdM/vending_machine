@@ -1,5 +1,6 @@
 /**
  * @file trava.h
+ * @class Trava
  * @author Felipe Gomes de Melo <felipegmelo@usp.br>
  * @brief Métodos de interface com a trava de manutenção da vending machine
  * @date 04/2020
@@ -14,6 +15,10 @@
 #define __TRAVA_H__
 
 /**
+ * @memberof Trava
+ *
+ * @private
+ *
  * @brief Indica se a trava está aberta.
  *
  * Caso a trava seja aberta, a máquina irá para o estado de manutenção
@@ -23,12 +28,16 @@
 static bool trava_aberta;
 
 /**
+ * @memberof Trava
+ * 
  * @brief Função de inicialização do componente
  *
  */
 void init_trava();
 
 /**
+ * @memberof Trava
+ * 
  * @brief Retorna o estado da trava
  *
  * @return true Se a trava estiver aberta

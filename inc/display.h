@@ -1,5 +1,6 @@
 /**
  * @file display.h
+ * @class Display
  * @author Felipe Gomes de Melo <felipegmelo@usp.br>
  * @brief Métodos para controle da interface de texto da vending machine
  * @date 04/2020
@@ -13,12 +14,16 @@
 #include <stdint.h>
 
 /**
+ * @memberof Display
+ *
  * @brief Função de inicialização do componente
  *
  */
 void display_init();
 
 /**
+ * @memberof Display
+ *
  * @brief Exibe uma mensagem para o usuário por meio do display
  *
  * @param msg Mensagem a ser mostrada
