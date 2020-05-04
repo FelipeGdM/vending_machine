@@ -51,12 +51,12 @@ typedef enum{
 /**
  * @brief Quantidade de estados existente
  */
-#define NUM_ESTADOS (int) ULTIMO_ESTADO
+#define NUM_ESTADOS ((int) ULTIMO_ESTADO)
 
 /**
  * @brief Quantidade de estados existente
  */
-#define NUM_EVENTOS (int) ULTIMO_EVENTO
+#define NUM_EVENTOS ((int) ULTIMO_EVENTO)
 
 typedef struct{
     uint8_t reais;
