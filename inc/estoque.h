@@ -47,9 +47,9 @@
 #define ID_JA_EXISTE 0xFD
 
 typedef struct{
-    uint8_t id;
-    uint8_t quantidade;
-    char nome[NOME_TAM];
+    uint8_t id;          ///< Identificador do produto
+    uint8_t quantidade;  ///< Quantidade de produto existente
+    char nome[NOME_TAM]; ///< Identificador legível do produto
 }produto_t;
 
 /**
