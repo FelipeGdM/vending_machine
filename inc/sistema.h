@@ -1,8 +1,8 @@
 #ifndef DEFINICOES_SISTEMA_H_INCLUDED
 #define DEFINICOES_SISTEMA_H_INCLUDED
 
-// #define true  1
-// #define false 0
+#define true  1
+#define false 0
 
 #include <stdint.h>
 
@@ -52,14 +52,19 @@ typedef enum{
 }acao_t;
 
 /**
- * @brief Quantidade de estados existente
+ * @brief Quantidade de estados existentes
  */
 #define NUM_ESTADOS ((int) ULTIMO_ESTADO)
 
 /**
- * @brief Quantidade de estados existente
+ * @brief Quantidade de eventos existentes
  */
 #define NUM_EVENTOS ((int) ULTIMO_EVENTO)
+
+/**
+ * @brief Quantidade de ações existentes
+ */
+#define NUM_ACOES ((int) ULTIMA_ACAO)
 
 typedef struct{
     uint8_t reais;
