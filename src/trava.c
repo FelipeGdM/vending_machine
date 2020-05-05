@@ -15,3 +15,7 @@ static bool trava_aberta;
 void trava_init() {
     trava_aberta = false;
 }
+
+bool trava_estado(){
+    return trava_aberta;
+};
