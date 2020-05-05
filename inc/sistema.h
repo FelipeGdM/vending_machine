@@ -39,14 +39,17 @@ typedef enum{
 /**
  * @brief Lista de ações de transição de estado
  */
-#define NENHUMA_ACAO -1
-#define A01  0
-#define A02  1
-#define A03  2
-#define A04  3
-#define A05  4
-#define A06  5
-#define A07  6
+typedef enum{
+    NENHUMA_ACAO = -1,
+    A01,
+    A02,
+    A03,
+    A04,
+    A05,
+    A06,
+    A07,
+    ULTIMA_ACAO
+}acao_t;
 
 /**
  * @brief Quantidade de estados existente
