@@ -35,6 +35,18 @@ void machina_init(){
     trava_init();
 }
 
+void teste_boca_caixa(){
+    dinheiro_t entrada;
+    boca_caixa_recebe_dinheiro(&entrada);
+}
+
+void teste_estoque(){
+
+    produto_t db[16];
+    estoque_init(db);
+    estoque_dump(db, 4);
+}
+
 int obter_evento(){
     return NENHUM_EVENTO;
     // int retval = NENHUM_EVENTO;
