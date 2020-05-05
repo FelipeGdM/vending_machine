@@ -10,11 +10,15 @@
  */
 
 #include <stdio.h>
-#include "definicoes_sistema.h"
+#include "sistema.h"
 #include "atuadores.h"
 #include "display.h"
 #include "teclado.h"
 #include "utils.h"
+#include "fsm.h"
+#include "estoque.h"
+#include "boca_caixa.h"
+#include "trava.h"
 
 /**
  * @memberof Machina
@@ -23,19 +27,55 @@
  *
  */
 void machina_init(){
+    fsm_init();
+    boca_caixa_init();
     atuadores_init();
     display_init();
     teclado_init();
     trava_init();
 }
 
-int main(){
+int obter_evento(){
+    return NENHUM_EVENTO;
+    // int retval = NENHUM_EVENTO;
 
-    char bom_dia[] = "Digite o produto que deve ser liberado: ";
+    // teclas = ihm_obterTeclas();
+    // if (decodificarAcionar())
+    //     return ACIONAR;
+    // if (decodificarDesacionar())
+    //     return DESACIONAR;
+    // if (decodificarTimeout())
+    //     return TIMEOUT;
+    // if (decodificarDisparar())
+    //     return DISPARAR;
 
-    display_exibe_msg(bom_dia, len(bom_dia));
-    uint8_t prod_id = teclado_le_prod_id();
-    atuadores_libera_produto(prod_id);
+    // return retval;
+} // obter_evento
 
-    return 0;
-}
+
+int main() {
+
+    acao_t codigo_acao;
+    estado_t estado;
+    evento_t codigo_evento;
+    evento_t evento_interno;
+
+    estado = INICIO;
+    evento_interno = NENHUM_EVENTO;
+
+    machina_init();
+    printf ("Vending machine ligada!\n");
+    while (true) {
+        if (evento_interno == NENHUM_EVENTO) {
+            codigo_evento = obter_evento();
+        } else {
+            codigo_evento = evento_interno;
+        }
+        if (codigo_evento != NENHUM_EVENTO)        {
+            codigo_acao = fsm_obter_acao(estado, codigo_evento);
+            estado = fsm_obter_proximo_estado(estado, codigo_evento);
+            // evento_interno = executarAcao(codigo_acao);
+            printf("Estado: %d Evento: %d Acao:%d\n", estado, codigo_evento, codigo_acao);
+        }
+    } // while true
+} // main
