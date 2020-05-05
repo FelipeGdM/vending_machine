@@ -16,7 +16,7 @@
 <polyline fill="none" stroke="#000000" points="0,-49.5 113,-49.5 "/>
 <text text-anchor="start" x="8" y="-37.5" font-family="Fira Code" font-size="10.00" fill="#000000">&#45; trava_aberta</text>
 <polyline fill="none" stroke="#000000" points="0,-30.5 113,-30.5 "/>
-<text text-anchor="start" x="8" y="-18.5" font-family="Fira Code" font-size="10.00" fill="#000000">+ init_trava()</text>
+<text text-anchor="start" x="8" y="-18.5" font-family="Fira Code" font-size="10.00" fill="#000000">+ trava_init()</text>
 <text text-anchor="start" x="8" y="-7.5" font-family="Fira Code" font-size="10.00" fill="#000000">+ trava_estado()</text>
 </g>
 </g>

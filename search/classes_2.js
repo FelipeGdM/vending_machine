@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['machina',['Machina',['../d1/df5/classMachina.html',1,'']]]
+  ['dinheiro_5ft',['dinheiro_t',['../d8/d3d/structdinheiro__t.html',1,'']]],
+  ['display',['Display',['../d6/dd6/classDisplay.html',1,'']]]
 ];

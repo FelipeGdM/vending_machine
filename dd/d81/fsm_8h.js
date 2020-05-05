@@ -1,7 +1,6 @@
 var fsm_8h =
 [
-    [ "acao_devolve_dinheiro", "dd/d81/fsm_8h.html#aeb3fb3cb6a1ade42c643af3ef72c763b", null ],
-    [ "acao_libera_produto", "dd/d81/fsm_8h.html#a553dbe66dc8ad137916eabc241a14a26", null ],
-    [ "evento_cliente_prod_id", "dd/d81/fsm_8h.html#a1249c9c4093cc9512558833c591882f6", null ],
-    [ "evento_recebe_dinheiro", "dd/d81/fsm_8h.html#ad3711d77e6679d4a15cd71d116fbbec3", null ]
+    [ "fsm_init", "dd/d81/fsm_8h.html#a6d28dcad43166c03b061f129a8759018", null ],
+    [ "fsm_obter_acao", "dd/d81/fsm_8h.html#a17f1d0bc0f8f7d0e109dd45d28e72921", null ],
+    [ "fsm_obter_proximo_estado", "dd/d81/fsm_8h.html#ab1c78c9c801d6c70d674a1a040dd1662", null ]
 ];

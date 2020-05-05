@@ -1,6 +1,8 @@
 <map id="Machina::machina_init" name="Machina::machina_init">
 <area shape="rect" id="node2" href="$d1/d1b/classAtuadores.html#a32b7777f9c06dafde01e55378c9e1af6" title="Função de inicialização do componente. " alt="" coords="244,5,467,32"/>
-<area shape="rect" id="node3" href="$d6/dd6/classDisplay.html#a8d41c12af4f6e6faad84e1f21f99b3e1" title="Função de inicialização do componente. " alt="" coords="260,56,451,83"/>
-<area shape="rect" id="node4" href="$de/dcb/classTeclado.html#ab96e8a4130d807871058321aa4ab0630" title="Função de inicialização do componente. " alt="" coords="260,107,451,133"/>
-<area shape="rect" id="node5" href="$d5/dcc/trava_8c.html#a525662648702cd87a3832730d7e37223" title="trava_init" alt="" coords="304,157,407,184"/>
+<area shape="rect" id="node3" href="$de/d0a/classBoca.html#ad0b071292b6c58df7adb93d30cc5a0fa" title="Função de inicialização do componente. " alt="" coords="260,56,451,83"/>
+<area shape="rect" id="node4" href="$d6/dd6/classDisplay.html#a8d41c12af4f6e6faad84e1f21f99b3e1" title="Função de inicialização do componente. " alt="" coords="260,107,451,133"/>
+<area shape="rect" id="node5" href="$d8/db8/fsm_8c.html#a6d28dcad43166c03b061f129a8759018" title="fsm_init" alt="" coords="312,157,399,184"/>
+<area shape="rect" id="node6" href="$de/dcb/classTeclado.html#ab96e8a4130d807871058321aa4ab0630" title="Função de inicialização do componente. " alt="" coords="260,208,451,235"/>
+<area shape="rect" id="node7" href="$df/d87/classTrava.html#a525662648702cd87a3832730d7e37223" title="Função de inicialização do componente. " alt="" coords="276,259,435,285"/>
 </map>

@@ -82,17 +82,17 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 
 <div class="contents">
 &#160;<ul>
-<li>acao_devolve_dinheiro()
-: <a class="el" href="dd/d81/fsm_8h.html#aeb3fb3cb6a1ade42c643af3ef72c763b">fsm.h</a>
-</li>
-<li>acao_libera_produto()
-: <a class="el" href="dd/d81/fsm_8h.html#a553dbe66dc8ad137916eabc241a14a26">fsm.h</a>
-</li>
 <li>atuadores_init()
 : <a class="el" href="dd/d4e/atuadores_8c.html#a32b7777f9c06dafde01e55378c9e1af6">atuadores.c</a>
 </li>
 <li>atuadores_libera_produto()
 : <a class="el" href="dd/d4e/atuadores_8c.html#abc1cd7f170c8442f5a7cb93353f98a1b">atuadores.c</a>
+</li>
+<li>boca_caixa_init()
+: <a class="el" href="d2/d9b/boca__caixa_8c.html#ad0b071292b6c58df7adb93d30cc5a0fa">boca_caixa.c</a>
+</li>
+<li>boca_caixa_recebe_dinheiro()
+: <a class="el" href="d2/d9b/boca__caixa_8c.html#ab6dca06e0edae042da5333c22535ee90">boca_caixa.c</a>
 </li>
 <li>display_exibe_msg()
 : <a class="el" href="db/d85/display_8c.html#ab40bbdd654d01b8ee4e3318f96addb0d">display.c</a>
@@ -100,17 +100,41 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <li>display_init()
 : <a class="el" href="db/d85/display_8c.html#a8d41c12af4f6e6faad84e1f21f99b3e1">display.c</a>
 </li>
-<li>evento_cliente_prod_id()
-: <a class="el" href="dd/d81/fsm_8h.html#a1249c9c4093cc9512558833c591882f6">fsm.h</a>
+<li>estoque_dump()
+: <a class="el" href="d5/d5c/estoque_8c.html#a2ee235ff9ba6088c94a93a0925477a1c">estoque.c</a>
 </li>
-<li>evento_recebe_dinheiro()
-: <a class="el" href="dd/d81/fsm_8h.html#ad3711d77e6679d4a15cd71d116fbbec3">fsm.h</a>
+<li>estoque_encontra_pos_livre()
+: <a class="el" href="d5/d5c/estoque_8c.html#a9758d57cd9fa7cad75d00d64c27dc80f">estoque.c</a>
+</li>
+<li>estoque_index_from_id()
+: <a class="el" href="d5/d5c/estoque_8c.html#a65a97d14e6d4caebb236121f8f12679c">estoque.c</a>
+</li>
+<li>estoque_init()
+: <a class="el" href="d5/d5c/estoque_8c.html#ae981f8c5ceb2ff989161e456f7db68c7">estoque.c</a>
+</li>
+<li>estoque_produto_add()
+: <a class="el" href="d5/d5c/estoque_8c.html#aa09ee2ee9e6e6bc43b8e3ca43eca8ac6">estoque.c</a>
+</li>
+<li>fsm_init()
+: <a class="el" href="d8/db8/fsm_8c.html#a6d28dcad43166c03b061f129a8759018">fsm.c</a>
+, <a class="el" href="dd/d81/fsm_8h.html#a6d28dcad43166c03b061f129a8759018">fsm.h</a>
+</li>
+<li>fsm_obter_acao()
+: <a class="el" href="d8/db8/fsm_8c.html#a17f1d0bc0f8f7d0e109dd45d28e72921">fsm.c</a>
+, <a class="el" href="dd/d81/fsm_8h.html#a17f1d0bc0f8f7d0e109dd45d28e72921">fsm.h</a>
+</li>
+<li>fsm_obter_proximo_estado()
+: <a class="el" href="d8/db8/fsm_8c.html#ab1c78c9c801d6c70d674a1a040dd1662">fsm.c</a>
+, <a class="el" href="dd/d81/fsm_8h.html#ab1c78c9c801d6c70d674a1a040dd1662">fsm.h</a>
 </li>
 <li>main()
 : <a class="el" href="d0/d29/main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main.c</a>
 </li>
 <li>map()
 : <a class="el" href="d5/d60/utils_8h.html#aed5692ee034a93046717a95130771be9">utils.h</a>
+</li>
+<li>obter_evento()
+: <a class="el" href="d0/d29/main_8c.html#a25a325d4158de41b2d0177e744e32e7f">main.c</a>
 </li>
 <li>teclado_init()
 : <a class="el" href="df/d99/teclado_8c.html#ab96e8a4130d807871058321aa4ab0630">teclado.c</a>
@@ -123,6 +147,15 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 : <a class="el" href="df/d99/teclado_8c.html#accc923a97665be4f8f473de70bf3641e">teclado.c</a>
 , <a class="el" href="dc/d17/teclado_8h.html#accc923a97665be4f8f473de70bf3641e">teclado.h</a>
 </li>
+<li>teste_boca_caixa()
+: <a class="el" href="d0/d29/main_8c.html#a963db83339669cc4c1bd2440ce5701e0">main.c</a>
+</li>
+<li>teste_estoque()
+: <a class="el" href="d0/d29/main_8c.html#af1d291eb446787a4df1bbe841497dade">main.c</a>
+</li>
+<li>trava_estado()
+: <a class="el" href="d5/dcc/trava_8c.html#aea863ed5526451622a71df58b3806f14">trava.c</a>
+</li>
 <li>trava_init()
 : <a class="el" href="d5/dcc/trava_8c.html#a525662648702cd87a3832730d7e37223">trava.c</a>
 </li>
@@ -132,7 +165,7 @@ $(document).ready(function(){initNavTree('globals_func.html','');});
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Gerado em Segunda, 4 de Maio de 2020 14:47:22 para Vending Machine por
+    <li class="footer">Gerado em Segunda, 4 de Maio de 2020 23:43:30 para Vending Machine por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

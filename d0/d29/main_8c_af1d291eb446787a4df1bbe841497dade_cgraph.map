@@ -1,0 +1,4 @@
+<map id="teste_estoque" name="teste_estoque">
+<area shape="rect" id="node2" href="$db/dff/classEstoque.html#a2ee235ff9ba6088c94a93a0925477a1c" title="Imprime na tela uma lista dos produtos cadastrados. " alt="" coords="180,5,371,32"/>
+<area shape="rect" id="node3" href="$db/dff/classEstoque.html#ae981f8c5ceb2ff989161e456f7db68c7" title="Função de inicialização do estoque com alguns produtos base. " alt="" coords="180,56,371,83"/>
+</map>

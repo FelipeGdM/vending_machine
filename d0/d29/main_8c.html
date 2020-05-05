@@ -88,15 +88,19 @@ $(document).ready(function(){initNavTree('d0/d29/main_8c.html','../../');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../df/da2/definicoes__sistema_8h_source.html">definicoes_sistema.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/db0/sistema_8h_source.html">sistema.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../da/d79/atuadores_8h_source.html">atuadores.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d68/display_8h_source.html">display.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../dc/d17/teclado_8h_source.html">teclado.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d5/d60/utils_8h_source.html">utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d81/fsm_8h_source.html">fsm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d86/estoque_8h_source.html">estoque.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d8/d1d/boca__caixa_8h_source.html">boca_caixa.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/dc1/trava_8h_source.html">trava.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Gráfico de dependência de inclusões para main.c:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/d10/main_8c__incl.svg" width="100%" height="440"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/d10/main_8c__incl.svg" width="100%" height="496"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 </div>
@@ -104,6 +108,12 @@ Gráfico de dependência de inclusões para main.c:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funções</h2></td></tr>
+<tr class="memitem:a963db83339669cc4c1bd2440ce5701e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/main_8c.html#a963db83339669cc4c1bd2440ce5701e0">teste_boca_caixa</a> ()</td></tr>
+<tr class="separator:a963db83339669cc4c1bd2440ce5701e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d291eb446787a4df1bbe841497dade"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/main_8c.html#af1d291eb446787a4df1bbe841497dade">teste_estoque</a> ()</td></tr>
+<tr class="separator:af1d291eb446787a4df1bbe841497dade"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25a325d4158de41b2d0177e744e32e7f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/main_8c.html#a25a325d4158de41b2d0177e744e32e7f">obter_evento</a> ()</td></tr>
+<tr class="separator:a25a325d4158de41b2d0177e744e32e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d29/main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
 <tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -123,17 +133,109 @@ Funções</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definição na linha <a class="el" href="../../d0/d29/main_8c_source.html#l00032">32</a> do arquivo <a class="el" href="../../d0/d29/main_8c_source.html">main.c</a>.</p>
+<p class="definition">Definição na linha <a class="el" href="../../d0/d29/main_8c_source.html#l00068">68</a> do arquivo <a class="el" href="../../d0/d29/main_8c_source.html">main.c</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../dd/d4e/atuadores_8c_source.html#l00017">Atuadores::atuadores_libera_produto()</a>, <a class="el" href="../../db/d85/display_8c_source.html#l00018">Display::display_exibe_msg()</a>, <a class="el" href="../../d5/d60/utils_8h_source.html#l00047">len</a> e <a class="el" href="../../df/d99/teclado_8c_source.html#l00023">teclado_le_prod_id()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;          {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">char</span> bom_dia[] = <span class="stringliteral">&quot;Digite o produto que deve ser liberado: &quot;</span>;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="../../d6/dd6/classDisplay.html#ab40bbdd654d01b8ee4e3318f96addb0d">display_exibe_msg</a>(bom_dia, <a class="code" href="../../d5/d60/utils_8h.html#a4f1bd13344d7277e1740cb9279f54293">len</a>(bom_dia));</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    uint8_t prod_id = <a class="code" href="../../df/d99/teclado_8c.html#accc923a97665be4f8f473de70bf3641e">teclado_le_prod_id</a>();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d1/d1b/classAtuadores.html#abc1cd7f170c8442f5a7cb93353f98a1b">atuadores_libera_produto</a>(prod_id);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="ttc" id="classAtuadores_html_abc1cd7f170c8442f5a7cb93353f98a1b"><div class="ttname"><a href="../../d1/d1b/classAtuadores.html#abc1cd7f170c8442f5a7cb93353f98a1b">Atuadores::atuadores_libera_produto</a></div><div class="ttdeci">void atuadores_libera_produto(uint8_t prod_id)</div><div class="ttdoc">Envia o comando de liberação do produto indicado. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d4e/atuadores_8c_source.html#l00017">atuadores.c:17</a></div></div>
-<div class="ttc" id="utils_8h_html_a4f1bd13344d7277e1740cb9279f54293"><div class="ttname"><a href="../../d5/d60/utils_8h.html#a4f1bd13344d7277e1740cb9279f54293">len</a></div><div class="ttdeci">#define len(arr)</div><div class="ttdoc">Returns the length of statically defined arrays. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d60/utils_8h_source.html#l00047">utils.h:47</a></div></div>
-<div class="ttc" id="classDisplay_html_ab40bbdd654d01b8ee4e3318f96addb0d"><div class="ttname"><a href="../../d6/dd6/classDisplay.html#ab40bbdd654d01b8ee4e3318f96addb0d">Display::display_exibe_msg</a></div><div class="ttdeci">void display_exibe_msg(char *msg, int8_t len)</div><div class="ttdoc">Exibe uma mensagem para o usuário por meio do display. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/d85/display_8c_source.html#l00018">display.c:18</a></div></div>
-<div class="ttc" id="teclado_8c_html_accc923a97665be4f8f473de70bf3641e"><div class="ttname"><a href="../../df/d99/teclado_8c.html#accc923a97665be4f8f473de70bf3641e">teclado_le_prod_id</a></div><div class="ttdeci">uint8_t teclado_le_prod_id()</div><div class="ttdef"><b>Definition:</b> <a href="../../df/d99/teclado_8c_source.html#l00023">teclado.c:23</a></div></div>
+<p class="reference">Referências <a class="el" href="../../d8/db8/fsm_8c_source.html#l00029">fsm_obter_acao()</a>, <a class="el" href="../../d8/db8/fsm_8c_source.html#l00033">fsm_obter_proximo_estado()</a>, <a class="el" href="../../db/db0/sistema_8h_source.html#l00013">INICIO</a>, <a class="el" href="../../d0/d29/main_8c_source.html#l00029">Machina::machina_init()</a>, <a class="el" href="../../db/db0/sistema_8h_source.html#l00027">NENHUM_EVENTO</a> e <a class="el" href="../../d0/d29/main_8c_source.html#l00050">obter_evento()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;           {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="../../db/db0/sistema_8h.html#a662545d978f4974d0e135b292486db56">acao_t</a> codigo_acao;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8">estado_t</a> estado;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914">evento_t</a> codigo_evento;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914">evento_t</a> evento_interno;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    estado = <a class="code" href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    evento_interno = <a class="code" href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914af9c0f345036169bcbf8bc705e597e55e">NENHUM_EVENTO</a>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="../../d1/df5/classMachina.html#a17c3a5d0ed70dbc9fbecc9a9c737c075">machina_init</a>();</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    printf (<span class="stringliteral">&quot;Vending machine ligada!\n&quot;</span>);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span> (evento_interno == <a class="code" href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914af9c0f345036169bcbf8bc705e597e55e">NENHUM_EVENTO</a>) {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            codigo_evento = <a class="code" href="../../d0/d29/main_8c.html#a25a325d4158de41b2d0177e744e32e7f">obter_evento</a>();</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            codigo_evento = evento_interno;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        }</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">if</span> (codigo_evento != <a class="code" href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914af9c0f345036169bcbf8bc705e597e55e">NENHUM_EVENTO</a>)        {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            codigo_acao = <a class="code" href="../../d8/db8/fsm_8c.html#a17f1d0bc0f8f7d0e109dd45d28e72921">fsm_obter_acao</a>(estado, codigo_evento);</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            estado = <a class="code" href="../../d8/db8/fsm_8c.html#ab1c78c9c801d6c70d674a1a040dd1662">fsm_obter_proximo_estado</a>(estado, codigo_evento);</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="comment">// evento_interno = executarAcao(codigo_acao);</span></div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            printf(<span class="stringliteral">&quot;Estado: %d Evento: %d Acao:%d\n&quot;</span>, estado, codigo_evento, codigo_acao);</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    } <span class="comment">// while true</span></div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;} <span class="comment">// main</span></div><div class="ttc" id="sistema_8h_html_a1f1fde62c955c2fe4b5ea8e0dda57914af9c0f345036169bcbf8bc705e597e55e"><div class="ttname"><a href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914af9c0f345036169bcbf8bc705e597e55e">NENHUM_EVENTO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/sistema_8h_source.html#l00027">sistema.h:27</a></div></div>
+<div class="ttc" id="classMachina_html_a17c3a5d0ed70dbc9fbecc9a9c737c075"><div class="ttname"><a href="../../d1/df5/classMachina.html#a17c3a5d0ed70dbc9fbecc9a9c737c075">Machina::machina_init</a></div><div class="ttdeci">void machina_init()</div><div class="ttdoc">Inicializa componentes da vending machine. </div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/main_8c_source.html#l00029">main.c:29</a></div></div>
+<div class="ttc" id="fsm_8c_html_a17f1d0bc0f8f7d0e109dd45d28e72921"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#a17f1d0bc0f8f7d0e109dd45d28e72921">fsm_obter_acao</a></div><div class="ttdeci">acao_t fsm_obter_acao(estado_t estado, evento_t codigo_evento)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00029">fsm.c:29</a></div></div>
+<div class="ttc" id="sistema_8h_html_a1f1fde62c955c2fe4b5ea8e0dda57914"><div class="ttname"><a href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914">evento_t</a></div><div class="ttdeci">evento_t</div><div class="ttdoc">Lista de eventos possíveis. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/sistema_8h_source.html#l00026">sistema.h:26</a></div></div>
+<div class="ttc" id="sistema_8h_html_a1f7a31172c7aa2767bce5f65c351cdf8af6e4a90a4a7e46c98a5a12b965fb8354"><div class="ttname"><a href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/sistema_8h_source.html#l00013">sistema.h:13</a></div></div>
+<div class="ttc" id="sistema_8h_html_a1f7a31172c7aa2767bce5f65c351cdf8"><div class="ttname"><a href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8">estado_t</a></div><div class="ttdeci">estado_t</div><div class="ttdoc">Lista de estados possíveis para a FSM do controlador. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/sistema_8h_source.html#l00012">sistema.h:12</a></div></div>
+<div class="ttc" id="main_8c_html_a25a325d4158de41b2d0177e744e32e7f"><div class="ttname"><a href="../../d0/d29/main_8c.html#a25a325d4158de41b2d0177e744e32e7f">obter_evento</a></div><div class="ttdeci">int obter_evento()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d29/main_8c_source.html#l00050">main.c:50</a></div></div>
+<div class="ttc" id="sistema_8h_html_a662545d978f4974d0e135b292486db56"><div class="ttname"><a href="../../db/db0/sistema_8h.html#a662545d978f4974d0e135b292486db56">acao_t</a></div><div class="ttdeci">acao_t</div><div class="ttdoc">Lista de ações de transição de estado. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/sistema_8h_source.html#l00042">sistema.h:42</a></div></div>
+<div class="ttc" id="fsm_8c_html_ab1c78c9c801d6c70d674a1a040dd1662"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#ab1c78c9c801d6c70d674a1a040dd1662">fsm_obter_proximo_estado</a></div><div class="ttdeci">estado_t fsm_obter_proximo_estado(estado_t estado, evento_t codigo_evento)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00033">fsm.c:33</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Este é o diagrama das funções utilizadas por esta função:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d29/main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="344" height="155"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d29/main_8c_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph.svg" width="599" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a25a325d4158de41b2d0177e744e32e7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25a325d4158de41b2d0177e744e32e7f">&#9670;&nbsp;</a></span>obter_evento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int obter_evento </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="../../d0/d29/main_8c_source.html#l00050">50</a> do arquivo <a class="el" href="../../d0/d29/main_8c_source.html">main.c</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../db/db0/sistema_8h_source.html#l00027">NENHUM_EVENTO</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                  {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914af9c0f345036169bcbf8bc705e597e55e">NENHUM_EVENTO</a>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">// int retval = NENHUM_EVENTO;</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">// teclas = ihm_obterTeclas();</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="comment">// if (decodificarAcionar())</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="comment">//     return ACIONAR;</span></div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// if (decodificarDesacionar())</span></div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">//     return DESACIONAR;</span></div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// if (decodificarTimeout())</span></div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">//     return TIMEOUT;</span></div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="comment">// if (decodificarDisparar())</span></div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="comment">//     return DISPARAR;</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// return retval;</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;} <span class="comment">// obter_evento</span></div><div class="ttc" id="sistema_8h_html_a1f1fde62c955c2fe4b5ea8e0dda57914af9c0f345036169bcbf8bc705e597e55e"><div class="ttname"><a href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914af9c0f345036169bcbf8bc705e597e55e">NENHUM_EVENTO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/sistema_8h_source.html#l00027">sistema.h:27</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d29/main_8c_a25a325d4158de41b2d0177e744e32e7f_icgraph.svg" width="232" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a963db83339669cc4c1bd2440ce5701e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a963db83339669cc4c1bd2440ce5701e0">&#9670;&nbsp;</a></span>teste_boca_caixa()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void teste_boca_caixa </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="../../d0/d29/main_8c_source.html#l00038">38</a> do arquivo <a class="el" href="../../d0/d29/main_8c_source.html">main.c</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d2/d9b/boca__caixa_8c_source.html#l00021">Boca::boca_caixa_recebe_dinheiro()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                       {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../d8/d3d/structdinheiro__t.html">dinheiro_t</a> entrada;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../de/d0a/classBoca.html#ab6dca06e0edae042da5333c22535ee90">boca_caixa_recebe_dinheiro</a>(&amp;entrada);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="ttc" id="structdinheiro__t_html"><div class="ttname"><a href="../../d8/d3d/structdinheiro__t.html">dinheiro_t</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/sistema_8h_source.html#l00069">sistema.h:69</a></div></div>
+<div class="ttc" id="classBoca_html_ab6dca06e0edae042da5333c22535ee90"><div class="ttname"><a href="../../de/d0a/classBoca.html#ab6dca06e0edae042da5333c22535ee90">Boca::boca_caixa_recebe_dinheiro</a></div><div class="ttdeci">void boca_caixa_recebe_dinheiro(dinheiro_t *entrada)</div><div class="ttdoc">Recebe uma quantia de dinheiro. </div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d9b/boca__caixa_8c_source.html#l00021">boca_caixa.c:21</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d29/main_8c_a963db83339669cc4c1bd2440ce5701e0_cgraph.svg" width="416" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="af1d291eb446787a4df1bbe841497dade"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1d291eb446787a4df1bbe841497dade">&#9670;&nbsp;</a></span>teste_estoque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void teste_estoque </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="../../d0/d29/main_8c_source.html#l00043">43</a> do arquivo <a class="el" href="../../d0/d29/main_8c_source.html">main.c</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d5/d5c/estoque_8c_source.html#l00060">Estoque::estoque_dump()</a> e <a class="el" href="../../d5/d5c/estoque_8c_source.html#l00019">Estoque::estoque_init()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                    {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../d4/d10/structproduto__t.html">produto_t</a> db[16];</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../db/dff/classEstoque.html#ae981f8c5ceb2ff989161e456f7db68c7">estoque_init</a>(db);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../db/dff/classEstoque.html#a2ee235ff9ba6088c94a93a0925477a1c">estoque_dump</a>(db, 4);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div><div class="ttc" id="classEstoque_html_a2ee235ff9ba6088c94a93a0925477a1c"><div class="ttname"><a href="../../db/dff/classEstoque.html#a2ee235ff9ba6088c94a93a0925477a1c">Estoque::estoque_dump</a></div><div class="ttdeci">void estoque_dump()</div><div class="ttdoc">Imprime na tela uma lista dos produtos cadastrados. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d5c/estoque_8c_source.html#l00060">estoque.c:60</a></div></div>
+<div class="ttc" id="structproduto__t_html"><div class="ttname"><a href="../../d4/d10/structproduto__t.html">produto_t</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d86/estoque_8h_source.html#l00049">estoque.h:49</a></div></div>
+<div class="ttc" id="classEstoque_html_ae981f8c5ceb2ff989161e456f7db68c7"><div class="ttname"><a href="../../db/dff/classEstoque.html#ae981f8c5ceb2ff989161e456f7db68c7">Estoque::estoque_init</a></div><div class="ttdeci">void estoque_init()</div><div class="ttdoc">Função de inicialização do estoque com alguns produtos base. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d5c/estoque_8c_source.html#l00019">estoque.c:19</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Este é o diagrama das funções utilizadas por esta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d0/d29/main_8c_af1d291eb446787a4df1bbe841497dade_cgraph.svg" width="376" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -145,7 +247,7 @@ Este é o diagrama das funções utilizadas por esta função:</div>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d0/d29/main_8c.html">main.c</a></li>
-    <li class="footer">Gerado em Segunda, 4 de Maio de 2020 14:47:22 para Vending Machine por
+    <li class="footer">Gerado em Segunda, 4 de Maio de 2020 23:43:30 para Vending Machine por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

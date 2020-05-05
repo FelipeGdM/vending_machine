@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['teclado_5finit',['teclado_init',['../de/dcb/classTeclado.html#ab96e8a4130d807871058321aa4ab0630',1,'Teclado::teclado_init()'],['../df/d99/teclado_8c.html#ab96e8a4130d807871058321aa4ab0630',1,'teclado_init():&#160;teclado.c']]],
-  ['teclado_5fle_5fentrada',['teclado_le_entrada',['../df/d99/teclado_8c.html#ab3f136c35489552ad219e9faf38f067a',1,'teclado_le_entrada(char *buffer):&#160;teclado.c'],['../dc/d17/teclado_8h.html#ab3f136c35489552ad219e9faf38f067a',1,'teclado_le_entrada(char *buffer):&#160;teclado.c']]],
-  ['teclado_5fle_5fprod_5fid',['teclado_le_prod_id',['../df/d99/teclado_8c.html#accc923a97665be4f8f473de70bf3641e',1,'teclado_le_prod_id():&#160;teclado.c'],['../dc/d17/teclado_8h.html#accc923a97665be4f8f473de70bf3641e',1,'teclado_le_prod_id():&#160;teclado.c']]],
-  ['trava_5festado',['trava_estado',['../df/d87/classTrava.html#aea863ed5526451622a71df58b3806f14',1,'Trava']]],
-  ['trava_5finit',['trava_init',['../d5/dcc/trava_8c.html#a525662648702cd87a3832730d7e37223',1,'trava.c']]]
+  ['machina_5finit',['machina_init',['../d1/df5/classMachina.html#a17c3a5d0ed70dbc9fbecc9a9c737c075',1,'Machina']]],
+  ['main',['main',['../d0/d29/main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'main.c']]],
+  ['map',['map',['../d5/d60/utils_8h.html#aed5692ee034a93046717a95130771be9',1,'utils.h']]]
 ];

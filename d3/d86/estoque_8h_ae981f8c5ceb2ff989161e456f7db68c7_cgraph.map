@@ -1,0 +1,5 @@
+<map id="estoque_init" name="estoque_init">
+<area shape="rect" id="node2" href="$d5/d5c/estoque_8c.html#aa09ee2ee9e6e6bc43b8e3ca43eca8ac6" title="estoque_produto_add" alt="" coords="172,42,347,69"/>
+<area shape="rect" id="node3" href="$d5/d5c/estoque_8c.html#a9758d57cd9fa7cad75d00d64c27dc80f" title="estoque_encontra_pos\l_livre" alt="" coords="399,5,581,47"/>
+<area shape="rect" id="node4" href="$d5/d5c/estoque_8c.html#a65a97d14e6d4caebb236121f8f12679c" title="estoque_index_from_id" alt="" coords="395,71,585,98"/>
+</map>

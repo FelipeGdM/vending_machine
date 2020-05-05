@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['max',['max',['../d5/d60/utils_8h.html#ac39d9cef6a5e030ba8d9e11121054268',1,'utils.h']]],
-  ['min',['min',['../d5/d60/utils_8h.html#abb702d8b501669a23aa0ab3b281b9384',1,'utils.h']]]
+  ['estoque_5fcheio',['ESTOQUE_CHEIO',['../d3/d86/estoque_8h.html#aac39ccabde72b6877d36ab92ac1294f9',1,'estoque.h']]],
+  ['estoque_5ftam',['ESTOQUE_TAM',['../d3/d86/estoque_8h.html#a00cbea7dd1c8ea0843d4f29e10262465',1,'estoque.h']]]
 ];
