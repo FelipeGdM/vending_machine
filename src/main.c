@@ -67,10 +67,10 @@ int obter_evento(){
 
 int main() {
 
-    acao_t codigo_acao;
-    estado_t estado;
-    evento_t codigo_evento;
-    evento_t evento_interno;
+    fsm_acao_t codigo_acao;
+    fsm_estado_t estado;
+    fsm_evento_t codigo_evento;
+    fsm_evento_t evento_interno;
 
     estado = INICIO;
     evento_interno = NENHUM_EVENTO;

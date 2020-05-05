@@ -38,6 +38,20 @@ void fsm_init(){
         }
     }
 
+    fsm_registra_transicao(INICIO, INICIALIZACAO, PEDE_DINHEIRO, AGUARDA_DINHEIRO);
+
+    fsm_registra_transicao(AGUARDA_DINHEIRO, DINHEIRO_INSERIDO, PEDE_PROD_ID, AGUARDA_PROD_ID);
+
+    fsm_registra_transicao(AGUARDA_PROD_ID, PROD_ID_INSERIDO, CONFERE_COMPRA, VALIDACAO_COMPRA);
+
+    fsm_registra_transicao(VALIDACAO_COMPRA, COMPRA_VALIDADA, LIBERA_PRODUTO, LIBERACAO_PRODUTO);
+
+    fsm_registra_transicao(LIBERACAO_PRODUTO, PRODUTO_LIBERADO, LIBERA_TROCO, LIBERACAO_TROCO);
+
+    fsm_registra_transicao(LIBERACAO_TROCO, TROCO_LIBERADO, FINALIZA_COMPRA, INICIO);
+
+    fsm_registra_transicao(VALIDACAO_COMPRA, COMPRA_CANCELADA, CANCELA_COMPRA, INICIO);
+
 } // fsm_init
 
 fsm_acao_t fsm_obter_acao(fsm_estado_t estado, fsm_evento_t codigo_evento) {
