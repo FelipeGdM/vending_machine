@@ -35,7 +35,7 @@ PROJECT = vending_machine
 
 # Executável do compilador
 CC = gcc
-CFLAGS = -Iinc
+CFLAGS = -Iinc -Wall # -Werror
 
 # Pasta dos binários compilados
 BUILD_DIR := build
@@ -67,6 +67,9 @@ clean:
 	@echo "Limpando arquivos compilados"
 	@-rm -rf $(BUILD_DIR)
 	@rm -f $(PROJECT)
+
+run:
+	./$(PROJECT)
 
 # Cria o build_dir
 $(BUILD_DIR):
