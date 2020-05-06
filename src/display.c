@@ -15,9 +15,6 @@ void display_init() {
     return;
 }
 
-void display_exibe_msg(char* msg, int8_t len) {
-    while (len >= 0) {
-        putchar(*msg++);
-        len--;
-    }
+void display_exibe_msg(char* msg) {
+    printf("%s", msg);
 }

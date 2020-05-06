@@ -14,6 +14,18 @@
 #include <stdint.h>
 
 /**
+ * @brief Imprime na tela uma quantia de dinheiro formatada com R$
+ *
+ */
+#define display_dinheiro(dinheiro) printf("R$ %hhu.%02hhu", dinheiro.reais, dinheiro.centavos)
+
+/**
+ * @brief Imprime na tela uma quantia de dinheiro a partir de um ponteiro
+ * formatada com R$
+ */
+#define display_p_dinheiro(dinheiro) printf("R$ %hhu.%02hhu", dinheiro->reais, dinheiro->centavos)
+
+/**
  * @memberof Display
  *
  * @brief Função de inicialização do componente
@@ -27,8 +39,7 @@ void display_init();
  * @brief Exibe uma mensagem para o usuário por meio do display
  *
  * @param msg Mensagem a ser mostrada
- * @param len Tamanho da mensagem
  */
-void display_exibe_msg(char* msg, int8_t len);
+void display_exibe_msg(char* msg);
 
 #endif // __DISPLAY_H__
