@@ -8,7 +8,8 @@ var NAVTREE =
       [ "Componentes Membros", "functions.html", [
         [ "Todos", "functions.html", null ],
         [ "Funções", "functions_func.html", null ],
-        [ "Variáveis", "functions_vars.html", null ]
+        [ "Variáveis", "functions_vars.html", null ],
+        [ "Enumerações", "functions_enum.html", null ]
       ] ]
     ] ],
     [ "Arquivos", null, [
@@ -17,8 +18,6 @@ var NAVTREE =
         [ "Todos", "globals.html", null ],
         [ "Funções", "globals_func.html", null ],
         [ "Variáveis", "globals_vars.html", null ],
-        [ "Enumerações", "globals_enum.html", null ],
-        [ "Valores de enumerações", "globals_eval.html", null ],
         [ "Definições e Macros", "globals_defs.html", null ]
       ] ]
     ] ]

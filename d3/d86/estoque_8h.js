@@ -1,6 +1,7 @@
 var estoque_8h =
 [
     [ "produto_t", "d4/d10/structproduto__t.html", "d4/d10/structproduto__t" ],
+    [ "DINHEIRO_INSUFICIENTE", "d3/d86/estoque_8h.html#a7f0b3d6c61d36d954da00de73f218b90", null ],
     [ "ESTOQUE_CHEIO", "d3/d86/estoque_8h.html#aac39ccabde72b6877d36ab92ac1294f9", null ],
     [ "ESTOQUE_TAM", "d3/d86/estoque_8h.html#a00cbea7dd1c8ea0843d4f29e10262465", null ],
     [ "ID_INVALIDO", "d3/d86/estoque_8h.html#a081fb33a916ac99480f3e5f7b2d950e2", null ],

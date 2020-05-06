@@ -92,7 +92,8 @@ $(document).ready(function(){initNavTree('db/d85/display_8c.html','../../');});
 </div><div class="textblock"><div class="dynheader">
 Gráfico de dependência de inclusões para display.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9c/display_8c__incl.svg" width="208" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d2/d9c/display_8c__incl.svg" width="200" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="../../db/d85/display_8c_source.html">Vá para o código-fonte deste arquivo.</a></p>
@@ -101,12 +102,12 @@ Gráfico de dependência de inclusões para display.c:</div>
 Funções</h2></td></tr>
 <tr class="memitem:a8d41c12af4f6e6faad84e1f21f99b3e1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/display_8c.html#a8d41c12af4f6e6faad84e1f21f99b3e1">display_init</a> ()</td></tr>
 <tr class="separator:a8d41c12af4f6e6faad84e1f21f99b3e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab40bbdd654d01b8ee4e3318f96addb0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/display_8c.html#ab40bbdd654d01b8ee4e3318f96addb0d">display_exibe_msg</a> (char *msg, int8_t <a class="el" href="../../d5/d60/utils_8h.html#a4f1bd13344d7277e1740cb9279f54293">len</a>)</td></tr>
-<tr class="separator:ab40bbdd654d01b8ee4e3318f96addb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad5c75a47069f4c7f5548c9381684d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d85/display_8c.html#a5ad5c75a47069f4c7f5548c9381684d5">display_exibe_msg</a> (char *msg)</td></tr>
+<tr class="separator:a5ad5c75a47069f4c7f5548c9381684d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Funções</h2>
-<a id="ab40bbdd654d01b8ee4e3318f96addb0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab40bbdd654d01b8ee4e3318f96addb0d">&#9670;&nbsp;</a></span>display_exibe_msg()</h2>
+<a id="a5ad5c75a47069f4c7f5548c9381684d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad5c75a47069f4c7f5548c9381684d5">&#9670;&nbsp;</a></span>display_exibe_msg()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -115,25 +116,14 @@ Funções</h2></td></tr>
           <td class="memname">void display_exibe_msg </td>
           <td>(</td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>msg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int8_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definição na linha <a class="el" href="../../db/d85/display_8c_source.html#l00018">18</a> do arquivo <a class="el" href="../../db/d85/display_8c_source.html">display.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                              {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="../../d5/d60/utils_8h.html#a4f1bd13344d7277e1740cb9279f54293">len</a> &gt;= 0) {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        putchar(*msg++);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <a class="code" href="../../d5/d60/utils_8h.html#a4f1bd13344d7277e1740cb9279f54293">len</a>--;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;}</div><div class="ttc" id="utils_8h_html_a4f1bd13344d7277e1740cb9279f54293"><div class="ttname"><a href="../../d5/d60/utils_8h.html#a4f1bd13344d7277e1740cb9279f54293">len</a></div><div class="ttdeci">#define len(arr)</div><div class="ttdoc">Returns the length of statically defined arrays. </div><div class="ttdef"><b>Definition:</b> <a href="../../d5/d60/utils_8h_source.html#l00059">utils.h:59</a></div></div>
-</div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                  {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    printf(<span class="stringliteral">&quot;%s&quot;</span>, msg);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a8d41c12af4f6e6faad84e1f21f99b3e1"></a>
@@ -161,7 +151,7 @@ Funções</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../db/d85/display_8c.html">display.c</a></li>
-    <li class="footer">Gerado em Segunda, 4 de Maio de 2020 23:43:29 para Vending Machine por
+    <li class="footer">Gerado em Terça, 5 de Maio de 2020 22:59:03 para Vending Machine por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

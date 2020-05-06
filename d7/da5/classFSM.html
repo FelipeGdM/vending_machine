@@ -1,0 +1,390 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Vending Machine: Referência da Classe FSM</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+</script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Vending Machine
+   &#160;<span id="projectnumber">0.1</span>
+   </div>
+   <div id="projectbrief">Projeto de PMR3402</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'Busca');
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('../../',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('d7/da5/classFSM.html','../../');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Tipos Públicos</a> &#124;
+<a href="#pub-methods">Métodos Públicos</a> &#124;
+<a href="../../de/d45/classFSM-members.html">Lista de todos os Membros</a>  </div>
+  <div class="headertitle">
+<div class="title">Referência da Classe FSM</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementação de uma máquina de estados finitos (finite state machine)  
+ <a href="../../d7/da5/classFSM.html#details">Mais...</a></p>
+
+<p><code>#include &quot;<a class="el" href="../../dd/d81/fsm_8h_source.html">fsm.h</a>&quot;</code></p>
+<div class="dynheader">
+Diagrama de colaboração para FSM:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../dc/d55/classFSM__coll__graph.svg" width="258" height="118"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Tipos Públicos</h2></td></tr>
+<tr class="memitem:a5367a689bb3f8c869340f436514a071f"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> <tr class="memdesc:a5367a689bb3f8c869340f436514a071f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista de estados possíveis para a <a class="el" href="../../d7/da5/classFSM.html" title="Implementação de uma máquina de estados finitos (finite state machine) ">FSM</a> do controlador.  <a href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">Mais...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:a5367a689bb3f8c869340f436514a071f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeaf8ddb06bb5b94854f6ddaef28b469"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a> <tr class="memdesc:adeaf8ddb06bb5b94854f6ddaef28b469"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista de eventos possíveis.  <a href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">Mais...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:adeaf8ddb06bb5b94854f6ddaef28b469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af64b9841d621cc3c8d9ed630bca717f5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a> <tr class="memdesc:af64b9841d621cc3c8d9ed630bca717f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lista de ações de transição de estado.  <a href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">Mais...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:af64b9841d621cc3c8d9ed630bca717f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Métodos Públicos</h2></td></tr>
+<tr class="memitem:a6d28dcad43166c03b061f129a8759018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da5/classFSM.html#a6d28dcad43166c03b061f129a8759018">fsm_init</a> ()</td></tr>
+<tr class="memdesc:a6d28dcad43166c03b061f129a8759018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Função de inicialização da máquina de estados.  <a href="#a6d28dcad43166c03b061f129a8759018">Mais...</a><br /></td></tr>
+<tr class="separator:a6d28dcad43166c03b061f129a8759018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6333686f3fb3b86490c72432702aec5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da5/classFSM.html#a6333686f3fb3b86490c72432702aec5f">fsm_obter_acao</a> (<a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> estado, <a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a> codigo_evento)</td></tr>
+<tr class="memdesc:a6333686f3fb3b86490c72432702aec5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna qual ação deve ser executada a partir de um estado e um evento.  <a href="#a6333686f3fb3b86490c72432702aec5f">Mais...</a><br /></td></tr>
+<tr class="separator:a6333686f3fb3b86490c72432702aec5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ac18de87ce6e6447811e2b506a5f19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/da5/classFSM.html#a46ac18de87ce6e6447811e2b506a5f19">fsm_obter_proximo_estado</a> (<a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> estado, <a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a> codigo_evento)</td></tr>
+<tr class="memdesc:a46ac18de87ce6e6447811e2b506a5f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retorna qual o próximo estado a partir do estado atual e um evento.  <a href="#a46ac18de87ce6e6447811e2b506a5f19">Mais...</a><br /></td></tr>
+<tr class="separator:a46ac18de87ce6e6447811e2b506a5f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
+<div class="textblock"><p>Implementação de uma máquina de estados finitos (finite state machine) </p>
+<dl class="section author"><dt>Autor</dt><dd>Felipe Gomes de Melo <a href="#" onclick="location.href='mai'+'lto:'+'fel'+'ip'+'egm'+'el'+'o@u'+'sp'+'.br'; return false;">felip<span style="display: none;">.nosp@m.</span>egme<span style="display: none;">.nosp@m.</span>lo@us<span style="display: none;">.nosp@m.</span>p.br</a> </dd></dl>
+<dl class="section date"><dt>Data</dt><dd>04/2020</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>MIT License - Copyright (c) 2020 </dd></dl>
+</div><h2 class="groupheader">Enumerações</h2>
+<a id="af64b9841d621cc3c8d9ed630bca717f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af64b9841d621cc3c8d9ed630bca717f5">&#9670;&nbsp;</a></span>fsm_acao_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista de ações de transição de estado. </p>
+
+<p class="definition">Definição na linha <a class="el" href="../../dd/d81/fsm_8h_source.html#l00062">62</a> do arquivo <a class="el" href="../../dd/d81/fsm_8h_source.html">fsm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../dd/d81/fsm_8h.html#a1225a75b53010193d5df1b3c69820f64">NENHUMA_ACAO</a> = -1,</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../dd/d81/fsm_8h.html#a959ef19cec55fc08739a619e776150c3">MOSTRA_OPCOES</a>,      <span class="comment">///&lt; Ação inicial, não utilizada em uma máquina física</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#abad76246be5d00b3d6fae74bc1c316fe">PEDE_DINHEIRO</a>,      <span class="comment">///&lt; Pede ao cliente inserir o dinheiro necessário</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a27dc3ecf4feff3ccab9973bec8493d3a">PEDE_PROD_ID</a>,       <span class="comment">///&lt; Pede ao cliente inserir o código do produto</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#ac6dcb73a073d4ac834ab0bc1de0c9bd4">CONFERE_COMPRA</a>,     <span class="comment">///&lt; Executa verificação da validade da compra</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#abee6314348afa6437479ac10873278a9">LIBERA_PRODUTO</a>,     <span class="comment">///&lt; Libera o produto pedido</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a681b2c1c5de9d11660df1ed580879927">LIBERA_TROCO</a>,       <span class="comment">///&lt; Libera o troco necessário</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a37d6780667f914cdab18ce6304396411">FINALIZA_COMPRA</a>,    <span class="comment">///&lt; Finaliza a compra e retorna ao estado inicial</span></div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#ac4ee4eed0d62a7f26a5a256e0c579b74">CANCELA_COMPRA</a>,     <span class="comment">///&lt; Cancela a compra e retorna ao estado inicial</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#ac63c2a797e85bfdec824c66ea3f2aade">ENTRA_MANUTENCAO</a>,   <span class="comment">///&lt; Entra no estado de manutenção</span></div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a364d1b580c3be4ca1f48be872c88cdce">ATUALIZA_TROCO</a>,     <span class="comment">///&lt; Atualiza a informação de troco disponível</span></div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a8ccfecb4fbdb9b5687e8b0ecf1917acd">SAI_MANUTENCAO</a>,     <span class="comment">///&lt; Sai do estado de manutenção</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a1579157445fbcda6e0c988419e4b2133">ULTIMA_ACAO</a></div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;} <a class="code" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a>;</div><div class="ttc" id="fsm_8h_html_a364d1b580c3be4ca1f48be872c88cdce"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a364d1b580c3be4ca1f48be872c88cdce">ATUALIZA_TROCO</a></div><div class="ttdoc">Atualiza a informação de troco disponível. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00073">fsm.h:73</a></div></div>
+<div class="ttc" id="fsm_8h_html_abad76246be5d00b3d6fae74bc1c316fe"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#abad76246be5d00b3d6fae74bc1c316fe">PEDE_DINHEIRO</a></div><div class="ttdoc">Pede ao cliente inserir o dinheiro necessário. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00065">fsm.h:65</a></div></div>
+<div class="ttc" id="fsm_8h_html_a8ccfecb4fbdb9b5687e8b0ecf1917acd"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a8ccfecb4fbdb9b5687e8b0ecf1917acd">SAI_MANUTENCAO</a></div><div class="ttdoc">Sai do estado de manutenção. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00074">fsm.h:74</a></div></div>
+<div class="ttc" id="fsm_8h_html_a27dc3ecf4feff3ccab9973bec8493d3a"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a27dc3ecf4feff3ccab9973bec8493d3a">PEDE_PROD_ID</a></div><div class="ttdoc">Pede ao cliente inserir o código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00066">fsm.h:66</a></div></div>
+<div class="ttc" id="fsm_8h_html_a1579157445fbcda6e0c988419e4b2133"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a1579157445fbcda6e0c988419e4b2133">ULTIMA_ACAO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00075">fsm.h:75</a></div></div>
+<div class="ttc" id="fsm_8h_html_abee6314348afa6437479ac10873278a9"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#abee6314348afa6437479ac10873278a9">LIBERA_PRODUTO</a></div><div class="ttdoc">Libera o produto pedido. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00068">fsm.h:68</a></div></div>
+<div class="ttc" id="fsm_8h_html_ac6dcb73a073d4ac834ab0bc1de0c9bd4"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ac6dcb73a073d4ac834ab0bc1de0c9bd4">CONFERE_COMPRA</a></div><div class="ttdoc">Executa verificação da validade da compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00067">fsm.h:67</a></div></div>
+<div class="ttc" id="fsm_8h_html_a959ef19cec55fc08739a619e776150c3"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a959ef19cec55fc08739a619e776150c3">MOSTRA_OPCOES</a></div><div class="ttdoc">Ação inicial, não utilizada em uma máquina física. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00064">fsm.h:64</a></div></div>
+<div class="ttc" id="fsm_8h_html_ac4ee4eed0d62a7f26a5a256e0c579b74"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ac4ee4eed0d62a7f26a5a256e0c579b74">CANCELA_COMPRA</a></div><div class="ttdoc">Cancela a compra e retorna ao estado inicial. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00071">fsm.h:71</a></div></div>
+<div class="ttc" id="fsm_8h_html_a1225a75b53010193d5df1b3c69820f64"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a1225a75b53010193d5df1b3c69820f64">NENHUMA_ACAO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00063">fsm.h:63</a></div></div>
+<div class="ttc" id="fsm_8h_html_ac63c2a797e85bfdec824c66ea3f2aade"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ac63c2a797e85bfdec824c66ea3f2aade">ENTRA_MANUTENCAO</a></div><div class="ttdoc">Entra no estado de manutenção. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00072">fsm.h:72</a></div></div>
+<div class="ttc" id="classFSM_html_af64b9841d621cc3c8d9ed630bca717f5"><div class="ttname"><a href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">FSM::fsm_acao_t</a></div><div class="ttdeci">fsm_acao_t</div><div class="ttdoc">Lista de ações de transição de estado. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00062">fsm.h:62</a></div></div>
+<div class="ttc" id="fsm_8h_html_a37d6780667f914cdab18ce6304396411"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a37d6780667f914cdab18ce6304396411">FINALIZA_COMPRA</a></div><div class="ttdoc">Finaliza a compra e retorna ao estado inicial. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00070">fsm.h:70</a></div></div>
+<div class="ttc" id="fsm_8h_html_a681b2c1c5de9d11660df1ed580879927"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a681b2c1c5de9d11660df1ed580879927">LIBERA_TROCO</a></div><div class="ttdoc">Libera o troco necessário. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00069">fsm.h:69</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a5367a689bb3f8c869340f436514a071f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5367a689bb3f8c869340f436514a071f">&#9670;&nbsp;</a></span>fsm_estado_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista de estados possíveis para a <a class="el" href="../../d7/da5/classFSM.html" title="Implementação de uma máquina de estados finitos (finite state machine) ">FSM</a> do controlador. </p>
+
+<p class="definition">Definição na linha <a class="el" href="../../dd/d81/fsm_8h_source.html#l00023">23</a> do arquivo <a class="el" href="../../dd/d81/fsm_8h_source.html">fsm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>,</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="../../dd/d81/fsm_8h.html#aad75e2334ab7ea4282fb3f80929efc03">AGUARDA_DINHEIRO</a>,       <span class="comment">///&lt; Máquina aguarda código do produto</span></div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a71f0bdbdde51381f6e236f41c5101017">AGUARDA_PROD_ID</a>,        <span class="comment">///&lt; Máquina aguarda código do produto</span></div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#aaef10612335144c85732c1ad34087da7">VALIDACAO_COMPRA</a>,       <span class="comment">///&lt; Máquina confere se a combinação de id e dinheiro é válida</span></div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#ae7b678267774e49bd57f2bafbceeb0ac">LIBERACAO_PRODUTO</a>,      <span class="comment">///&lt; Máquina irá liberar o produto</span></div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a3a9af81337e5e7ceea5a6901c745cdec">LIBERACAO_TROCO</a>,        <span class="comment">///&lt; Máquina irá liberar o troco</span></div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a3979fb701aa1e159fd9a9c7a28c29320">CANCELAMENTO_COMPRA</a>,    <span class="comment">///&lt; Máquina irá cancelar a compra e retornar ao início</span></div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>,             <span class="comment">///&lt; Estado de manutenção da máquina</span></div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a22586f8b9f4ad510e16c8169cbc49f94">ATUALIZACAO_TROCO</a>,</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="../../dd/d81/fsm_8h.html#ad19b68daad3718f1bf22f026ed074fbb">ULTIMO_ESTADO</a></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;} <a class="code" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>;</div><div class="ttc" id="fsm_8h_html_a22586f8b9f4ad510e16c8169cbc49f94"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a22586f8b9f4ad510e16c8169cbc49f94">ATUALIZACAO_TROCO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00032">fsm.h:32</a></div></div>
+<div class="ttc" id="fsm_8h_html_aaef10612335144c85732c1ad34087da7"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#aaef10612335144c85732c1ad34087da7">VALIDACAO_COMPRA</a></div><div class="ttdoc">Máquina confere se a combinação de id e dinheiro é válida. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00027">fsm.h:27</a></div></div>
+<div class="ttc" id="fsm_8h_html_a3979fb701aa1e159fd9a9c7a28c29320"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a3979fb701aa1e159fd9a9c7a28c29320">CANCELAMENTO_COMPRA</a></div><div class="ttdoc">Máquina irá cancelar a compra e retornar ao início. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00030">fsm.h:30</a></div></div>
+<div class="ttc" id="fsm_8h_html_a6b9a573288de168638e1a08242009846"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a></div><div class="ttdoc">Estado de manutenção da máquina. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00031">fsm.h:31</a></div></div>
+<div class="ttc" id="fsm_8h_html_a3a9af81337e5e7ceea5a6901c745cdec"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a3a9af81337e5e7ceea5a6901c745cdec">LIBERACAO_TROCO</a></div><div class="ttdoc">Máquina irá liberar o troco. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00029">fsm.h:29</a></div></div>
+<div class="ttc" id="fsm_8h_html_aad75e2334ab7ea4282fb3f80929efc03"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#aad75e2334ab7ea4282fb3f80929efc03">AGUARDA_DINHEIRO</a></div><div class="ttdoc">Máquina aguarda código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00025">fsm.h:25</a></div></div>
+<div class="ttc" id="fsm_8h_html_ae7b678267774e49bd57f2bafbceeb0ac"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ae7b678267774e49bd57f2bafbceeb0ac">LIBERACAO_PRODUTO</a></div><div class="ttdoc">Máquina irá liberar o produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00028">fsm.h:28</a></div></div>
+<div class="ttc" id="classFSM_html_a5367a689bb3f8c869340f436514a071f"><div class="ttname"><a href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">FSM::fsm_estado_t</a></div><div class="ttdeci">fsm_estado_t</div><div class="ttdoc">Lista de estados possíveis para a FSM do controlador. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00023">fsm.h:23</a></div></div>
+<div class="ttc" id="fsm_8h_html_af6e4a90a4a7e46c98a5a12b965fb8354"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00024">fsm.h:24</a></div></div>
+<div class="ttc" id="fsm_8h_html_ad19b68daad3718f1bf22f026ed074fbb"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ad19b68daad3718f1bf22f026ed074fbb">ULTIMO_ESTADO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00033">fsm.h:33</a></div></div>
+<div class="ttc" id="fsm_8h_html_a71f0bdbdde51381f6e236f41c5101017"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a71f0bdbdde51381f6e236f41c5101017">AGUARDA_PROD_ID</a></div><div class="ttdoc">Máquina aguarda código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00026">fsm.h:26</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adeaf8ddb06bb5b94854f6ddaef28b469"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeaf8ddb06bb5b94854f6ddaef28b469">&#9670;&nbsp;</a></span>fsm_evento_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Lista de eventos possíveis. </p>
+
+<p class="definition">Definição na linha <a class="el" href="../../dd/d81/fsm_8h_source.html#l00041">41</a> do arquivo <a class="el" href="../../dd/d81/fsm_8h_source.html">fsm.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="../../dd/d81/fsm_8h.html#af9c0f345036169bcbf8bc705e597e55e">NENHUM_EVENTO</a> = -1,</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="../../dd/d81/fsm_8h.html#a8f63159423107cadf1f0d7fa4c21849f">INICIALIZACAO</a>,</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="../../dd/d81/fsm_8h.html#a73685c89db026628fe9b99f12a31b8d2">COMPRA_INICIADA</a>,     <span class="comment">///&lt; Cliente escolheu iniciar a compra</span></div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a6ac671cf924e21f96b65ea0abbfee904">DINHEIRO_INSERIDO</a>,   <span class="comment">///&lt; Cliente inseriu dinheiro na máquina</span></div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a879973add0597b5198c786369fa6a225">PROD_ID_INSERIDO</a>,    <span class="comment">///&lt; Cliente inseriu código do produto</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a72194d85ed2cf3c71c496eb7103e14a0">COMPRA_VALIDADA</a>,     <span class="comment">///&lt; Cliente cancelou a compra</span></div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#ab4bee518ef8759d9d1213f6f6b1be882">COMPRA_CANCELADA</a>,    <span class="comment">///&lt; Cliente cancelou a compra</span></div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a10274519494252cac661e4e4fef1d89a">PRODUTO_LIBERADO</a>,    <span class="comment">///&lt; Máquina liberou produto</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a121e2b39b72704c90c1e4c761defba2e">TROCO_LIBERADO</a>,      <span class="comment">///&lt; Máquina liberou troco</span></div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a66d9824b4a981372f1bab9afd7bcba0b">MAQUINA_ABERTA</a>,      <span class="comment">///&lt; Repositor abriu a máquina para manutenção</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a09540f1b4cceeaf074d1ba0b5ce45ea2">MAQUINA_FECHADA</a>,     <span class="comment">///&lt; Repositor fechou a máquina</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#a344b87e35d49f9854793b13885e1066e">TROCO_INSERIDO</a>,      <span class="comment">///&lt; Repositor inseriu dinheiro na caixa de troco</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment"></span>    <a class="code" href="../../dd/d81/fsm_8h.html#ad678b8848a0b89028bc8bca5237bceeb">ULTIMO_EVENTO</a></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <a class="code" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a>;</div><div class="ttc" id="classFSM_html_adeaf8ddb06bb5b94854f6ddaef28b469"><div class="ttname"><a href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">FSM::fsm_evento_t</a></div><div class="ttdeci">fsm_evento_t</div><div class="ttdoc">Lista de eventos possíveis. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00041">fsm.h:41</a></div></div>
+<div class="ttc" id="fsm_8h_html_a09540f1b4cceeaf074d1ba0b5ce45ea2"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a09540f1b4cceeaf074d1ba0b5ce45ea2">MAQUINA_FECHADA</a></div><div class="ttdoc">Repositor fechou a máquina. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00052">fsm.h:52</a></div></div>
+<div class="ttc" id="fsm_8h_html_a66d9824b4a981372f1bab9afd7bcba0b"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a66d9824b4a981372f1bab9afd7bcba0b">MAQUINA_ABERTA</a></div><div class="ttdoc">Repositor abriu a máquina para manutenção. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00051">fsm.h:51</a></div></div>
+<div class="ttc" id="fsm_8h_html_af9c0f345036169bcbf8bc705e597e55e"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#af9c0f345036169bcbf8bc705e597e55e">NENHUM_EVENTO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00042">fsm.h:42</a></div></div>
+<div class="ttc" id="fsm_8h_html_a72194d85ed2cf3c71c496eb7103e14a0"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a72194d85ed2cf3c71c496eb7103e14a0">COMPRA_VALIDADA</a></div><div class="ttdoc">Cliente cancelou a compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00047">fsm.h:47</a></div></div>
+<div class="ttc" id="fsm_8h_html_a344b87e35d49f9854793b13885e1066e"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a344b87e35d49f9854793b13885e1066e">TROCO_INSERIDO</a></div><div class="ttdoc">Repositor inseriu dinheiro na caixa de troco. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00053">fsm.h:53</a></div></div>
+<div class="ttc" id="fsm_8h_html_ad678b8848a0b89028bc8bca5237bceeb"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ad678b8848a0b89028bc8bca5237bceeb">ULTIMO_EVENTO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00054">fsm.h:54</a></div></div>
+<div class="ttc" id="fsm_8h_html_a10274519494252cac661e4e4fef1d89a"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a10274519494252cac661e4e4fef1d89a">PRODUTO_LIBERADO</a></div><div class="ttdoc">Máquina liberou produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00049">fsm.h:49</a></div></div>
+<div class="ttc" id="fsm_8h_html_a121e2b39b72704c90c1e4c761defba2e"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a121e2b39b72704c90c1e4c761defba2e">TROCO_LIBERADO</a></div><div class="ttdoc">Máquina liberou troco. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00050">fsm.h:50</a></div></div>
+<div class="ttc" id="fsm_8h_html_a8f63159423107cadf1f0d7fa4c21849f"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a8f63159423107cadf1f0d7fa4c21849f">INICIALIZACAO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00043">fsm.h:43</a></div></div>
+<div class="ttc" id="fsm_8h_html_a6ac671cf924e21f96b65ea0abbfee904"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a6ac671cf924e21f96b65ea0abbfee904">DINHEIRO_INSERIDO</a></div><div class="ttdoc">Cliente inseriu dinheiro na máquina. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00045">fsm.h:45</a></div></div>
+<div class="ttc" id="fsm_8h_html_ab4bee518ef8759d9d1213f6f6b1be882"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ab4bee518ef8759d9d1213f6f6b1be882">COMPRA_CANCELADA</a></div><div class="ttdoc">Cliente cancelou a compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00048">fsm.h:48</a></div></div>
+<div class="ttc" id="fsm_8h_html_a879973add0597b5198c786369fa6a225"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a879973add0597b5198c786369fa6a225">PROD_ID_INSERIDO</a></div><div class="ttdoc">Cliente inseriu código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00046">fsm.h:46</a></div></div>
+<div class="ttc" id="fsm_8h_html_a73685c89db026628fe9b99f12a31b8d2"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a73685c89db026628fe9b99f12a31b8d2">COMPRA_INICIADA</a></div><div class="ttdoc">Cliente escolheu iniciar a compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00044">fsm.h:44</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Métodos</h2>
+<a id="a6d28dcad43166c03b061f129a8759018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d28dcad43166c03b061f129a8759018">&#9670;&nbsp;</a></span>fsm_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fsm_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Função de inicialização da máquina de estados. </p>
+
+<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00030">30</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;               {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    uint8_t i;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    uint8_t j;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../dd/d81/fsm_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>; i++) {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="../../dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>; j++) {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a>[i][j] = <a class="code" href="../../dd/d81/fsm_8h.html#a1225a75b53010193d5df1b3c69820f64">NENHUMA_ACAO</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a>[i][j] = i;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a73685c89db026628fe9b99f12a31b8d2">COMPRA_INICIADA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#abad76246be5d00b3d6fae74bc1c316fe">PEDE_DINHEIRO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#aad75e2334ab7ea4282fb3f80929efc03">AGUARDA_DINHEIRO</a>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#aad75e2334ab7ea4282fb3f80929efc03">AGUARDA_DINHEIRO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a6ac671cf924e21f96b65ea0abbfee904">DINHEIRO_INSERIDO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a27dc3ecf4feff3ccab9973bec8493d3a">PEDE_PROD_ID</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a71f0bdbdde51381f6e236f41c5101017">AGUARDA_PROD_ID</a>);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a71f0bdbdde51381f6e236f41c5101017">AGUARDA_PROD_ID</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a879973add0597b5198c786369fa6a225">PROD_ID_INSERIDO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ac6dcb73a073d4ac834ab0bc1de0c9bd4">CONFERE_COMPRA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#aaef10612335144c85732c1ad34087da7">VALIDACAO_COMPRA</a>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#aaef10612335144c85732c1ad34087da7">VALIDACAO_COMPRA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a72194d85ed2cf3c71c496eb7103e14a0">COMPRA_VALIDADA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#abee6314348afa6437479ac10873278a9">LIBERA_PRODUTO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ae7b678267774e49bd57f2bafbceeb0ac">LIBERACAO_PRODUTO</a>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#ae7b678267774e49bd57f2bafbceeb0ac">LIBERACAO_PRODUTO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a10274519494252cac661e4e4fef1d89a">PRODUTO_LIBERADO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a681b2c1c5de9d11660df1ed580879927">LIBERA_TROCO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a3a9af81337e5e7ceea5a6901c745cdec">LIBERACAO_TROCO</a>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a3a9af81337e5e7ceea5a6901c745cdec">LIBERACAO_TROCO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a121e2b39b72704c90c1e4c761defba2e">TROCO_LIBERADO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a37d6780667f914cdab18ce6304396411">FINALIZA_COMPRA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#aaef10612335144c85732c1ad34087da7">VALIDACAO_COMPRA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ab4bee518ef8759d9d1213f6f6b1be882">COMPRA_CANCELADA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ac4ee4eed0d62a7f26a5a256e0c579b74">CANCELA_COMPRA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a8f63159423107cadf1f0d7fa4c21849f">INICIALIZACAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a959ef19cec55fc08739a619e776150c3">MOSTRA_OPCOES</a>, <a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a66d9824b4a981372f1bab9afd7bcba0b">MAQUINA_ABERTA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ac63c2a797e85bfdec824c66ea3f2aade">ENTRA_MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a66d9824b4a981372f1bab9afd7bcba0b">MAQUINA_ABERTA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ac63c2a797e85bfdec824c66ea3f2aade">ENTRA_MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a344b87e35d49f9854793b13885e1066e">TROCO_INSERIDO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a364d1b580c3be4ca1f48be872c88cdce">ATUALIZA_TROCO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a22586f8b9f4ad510e16c8169cbc49f94">ATUALIZACAO_TROCO</a>);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a22586f8b9f4ad510e16c8169cbc49f94">ATUALIZACAO_TROCO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a66d9824b4a981372f1bab9afd7bcba0b">MAQUINA_ABERTA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a8ccfecb4fbdb9b5687e8b0ecf1917acd">SAI_MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a22586f8b9f4ad510e16c8169cbc49f94">ATUALIZACAO_TROCO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a09540f1b4cceeaf074d1ba0b5ce45ea2">MAQUINA_FECHADA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a8ccfecb4fbdb9b5687e8b0ecf1917acd">SAI_MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a09540f1b4cceeaf074d1ba0b5ce45ea2">MAQUINA_FECHADA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a8ccfecb4fbdb9b5687e8b0ecf1917acd">SAI_MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// fsm_init</span></div><div class="ttc" id="fsm_8h_html_a22586f8b9f4ad510e16c8169cbc49f94"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a22586f8b9f4ad510e16c8169cbc49f94">ATUALIZACAO_TROCO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00032">fsm.h:32</a></div></div>
+<div class="ttc" id="fsm_8h_html_a364d1b580c3be4ca1f48be872c88cdce"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a364d1b580c3be4ca1f48be872c88cdce">ATUALIZA_TROCO</a></div><div class="ttdoc">Atualiza a informação de troco disponível. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00073">fsm.h:73</a></div></div>
+<div class="ttc" id="fsm_8h_html_a09540f1b4cceeaf074d1ba0b5ce45ea2"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a09540f1b4cceeaf074d1ba0b5ce45ea2">MAQUINA_FECHADA</a></div><div class="ttdoc">Repositor fechou a máquina. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00052">fsm.h:52</a></div></div>
+<div class="ttc" id="fsm_8h_html_abad76246be5d00b3d6fae74bc1c316fe"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#abad76246be5d00b3d6fae74bc1c316fe">PEDE_DINHEIRO</a></div><div class="ttdoc">Pede ao cliente inserir o dinheiro necessário. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00065">fsm.h:65</a></div></div>
+<div class="ttc" id="fsm_8h_html_a8ccfecb4fbdb9b5687e8b0ecf1917acd"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a8ccfecb4fbdb9b5687e8b0ecf1917acd">SAI_MANUTENCAO</a></div><div class="ttdoc">Sai do estado de manutenção. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00074">fsm.h:74</a></div></div>
+<div class="ttc" id="fsm_8h_html_a27dc3ecf4feff3ccab9973bec8493d3a"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a27dc3ecf4feff3ccab9973bec8493d3a">PEDE_PROD_ID</a></div><div class="ttdoc">Pede ao cliente inserir o código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00066">fsm.h:66</a></div></div>
+<div class="ttc" id="fsm_8c_html_aaad03592359b5d77cb354d7fc210bb57"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a></div><div class="ttdeci">static fsm_estado_t fsm_proximo_estado_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00015">fsm.c:15</a></div></div>
+<div class="ttc" id="fsm_8h_html_aaef10612335144c85732c1ad34087da7"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#aaef10612335144c85732c1ad34087da7">VALIDACAO_COMPRA</a></div><div class="ttdoc">Máquina confere se a combinação de id e dinheiro é válida. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00027">fsm.h:27</a></div></div>
+<div class="ttc" id="fsm_8h_html_a66d9824b4a981372f1bab9afd7bcba0b"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a66d9824b4a981372f1bab9afd7bcba0b">MAQUINA_ABERTA</a></div><div class="ttdoc">Repositor abriu a máquina para manutenção. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00051">fsm.h:51</a></div></div>
+<div class="ttc" id="fsm_8h_html_abee6314348afa6437479ac10873278a9"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#abee6314348afa6437479ac10873278a9">LIBERA_PRODUTO</a></div><div class="ttdoc">Libera o produto pedido. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00068">fsm.h:68</a></div></div>
+<div class="ttc" id="fsm_8h_html_a6179415cb58b23d7808fcca9583d8ce1"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a></div><div class="ttdeci">#define NUM_EVENTOS</div><div class="ttdoc">Quantidade de eventos existentes. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00086">fsm.h:86</a></div></div>
+<div class="ttc" id="fsm_8h_html_a6b9a573288de168638e1a08242009846"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a></div><div class="ttdoc">Estado de manutenção da máquina. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00031">fsm.h:31</a></div></div>
+<div class="ttc" id="fsm_8h_html_a3a9af81337e5e7ceea5a6901c745cdec"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a3a9af81337e5e7ceea5a6901c745cdec">LIBERACAO_TROCO</a></div><div class="ttdoc">Máquina irá liberar o troco. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00029">fsm.h:29</a></div></div>
+<div class="ttc" id="fsm_8h_html_aad75e2334ab7ea4282fb3f80929efc03"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#aad75e2334ab7ea4282fb3f80929efc03">AGUARDA_DINHEIRO</a></div><div class="ttdoc">Máquina aguarda código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00025">fsm.h:25</a></div></div>
+<div class="ttc" id="fsm_8h_html_ac6dcb73a073d4ac834ab0bc1de0c9bd4"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ac6dcb73a073d4ac834ab0bc1de0c9bd4">CONFERE_COMPRA</a></div><div class="ttdoc">Executa verificação da validade da compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00067">fsm.h:67</a></div></div>
+<div class="ttc" id="fsm_8h_html_a72194d85ed2cf3c71c496eb7103e14a0"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a72194d85ed2cf3c71c496eb7103e14a0">COMPRA_VALIDADA</a></div><div class="ttdoc">Cliente cancelou a compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00047">fsm.h:47</a></div></div>
+<div class="ttc" id="fsm_8h_html_a344b87e35d49f9854793b13885e1066e"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a344b87e35d49f9854793b13885e1066e">TROCO_INSERIDO</a></div><div class="ttdoc">Repositor inseriu dinheiro na caixa de troco. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00053">fsm.h:53</a></div></div>
+<div class="ttc" id="fsm_8h_html_a959ef19cec55fc08739a619e776150c3"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a959ef19cec55fc08739a619e776150c3">MOSTRA_OPCOES</a></div><div class="ttdoc">Ação inicial, não utilizada em uma máquina física. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00064">fsm.h:64</a></div></div>
+<div class="ttc" id="fsm_8h_html_a10274519494252cac661e4e4fef1d89a"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a10274519494252cac661e4e4fef1d89a">PRODUTO_LIBERADO</a></div><div class="ttdoc">Máquina liberou produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00049">fsm.h:49</a></div></div>
+<div class="ttc" id="fsm_8h_html_a121e2b39b72704c90c1e4c761defba2e"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a121e2b39b72704c90c1e4c761defba2e">TROCO_LIBERADO</a></div><div class="ttdoc">Máquina liberou troco. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00050">fsm.h:50</a></div></div>
+<div class="ttc" id="fsm_8h_html_ae7b678267774e49bd57f2bafbceeb0ac"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ae7b678267774e49bd57f2bafbceeb0ac">LIBERACAO_PRODUTO</a></div><div class="ttdoc">Máquina irá liberar o produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00028">fsm.h:28</a></div></div>
+<div class="ttc" id="fsm_8c_html_a56fe90d39912cfa7e938c437dc278eb1"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a></div><div class="ttdeci">static fsm_acao_t fsm_acao_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00014">fsm.c:14</a></div></div>
+<div class="ttc" id="fsm_8h_html_a8f63159423107cadf1f0d7fa4c21849f"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a8f63159423107cadf1f0d7fa4c21849f">INICIALIZACAO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00043">fsm.h:43</a></div></div>
+<div class="ttc" id="fsm_8h_html_a6ac671cf924e21f96b65ea0abbfee904"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a6ac671cf924e21f96b65ea0abbfee904">DINHEIRO_INSERIDO</a></div><div class="ttdoc">Cliente inseriu dinheiro na máquina. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00045">fsm.h:45</a></div></div>
+<div class="ttc" id="fsm_8h_html_ab4bee518ef8759d9d1213f6f6b1be882"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ab4bee518ef8759d9d1213f6f6b1be882">COMPRA_CANCELADA</a></div><div class="ttdoc">Cliente cancelou a compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00048">fsm.h:48</a></div></div>
+<div class="ttc" id="fsm_8h_html_af6e4a90a4a7e46c98a5a12b965fb8354"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00024">fsm.h:24</a></div></div>
+<div class="ttc" id="fsm_8h_html_a879973add0597b5198c786369fa6a225"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a879973add0597b5198c786369fa6a225">PROD_ID_INSERIDO</a></div><div class="ttdoc">Cliente inseriu código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00046">fsm.h:46</a></div></div>
+<div class="ttc" id="fsm_8h_html_ad8eab5bf94794d159e0be32e3373604d"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a></div><div class="ttdeci">#define NUM_ESTADOS</div><div class="ttdoc">Quantidade de estados existentes. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00081">fsm.h:81</a></div></div>
+<div class="ttc" id="fsm_8h_html_ac4ee4eed0d62a7f26a5a256e0c579b74"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ac4ee4eed0d62a7f26a5a256e0c579b74">CANCELA_COMPRA</a></div><div class="ttdoc">Cancela a compra e retorna ao estado inicial. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00071">fsm.h:71</a></div></div>
+<div class="ttc" id="fsm_8h_html_a1225a75b53010193d5df1b3c69820f64"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a1225a75b53010193d5df1b3c69820f64">NENHUMA_ACAO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00063">fsm.h:63</a></div></div>
+<div class="ttc" id="fsm_8h_html_a71f0bdbdde51381f6e236f41c5101017"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a71f0bdbdde51381f6e236f41c5101017">AGUARDA_PROD_ID</a></div><div class="ttdoc">Máquina aguarda código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00026">fsm.h:26</a></div></div>
+<div class="ttc" id="fsm_8h_html_ac63c2a797e85bfdec824c66ea3f2aade"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ac63c2a797e85bfdec824c66ea3f2aade">ENTRA_MANUTENCAO</a></div><div class="ttdoc">Entra no estado de manutenção. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00072">fsm.h:72</a></div></div>
+<div class="ttc" id="fsm_8h_html_a73685c89db026628fe9b99f12a31b8d2"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a73685c89db026628fe9b99f12a31b8d2">COMPRA_INICIADA</a></div><div class="ttdoc">Cliente escolheu iniciar a compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00044">fsm.h:44</a></div></div>
+<div class="ttc" id="fsm_8h_html_a37d6780667f914cdab18ce6304396411"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a37d6780667f914cdab18ce6304396411">FINALIZA_COMPRA</a></div><div class="ttdoc">Finaliza a compra e retorna ao estado inicial. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00070">fsm.h:70</a></div></div>
+<div class="ttc" id="fsm_8h_html_a681b2c1c5de9d11660df1ed580879927"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a681b2c1c5de9d11660df1ed580879927">LIBERA_TROCO</a></div><div class="ttdoc">Libera o troco necessário. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00069">fsm.h:69</a></div></div>
+<div class="ttc" id="fsm_8c_html_aadd71e92c15f5812f57ef15404d9663e"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a></div><div class="ttdeci">void fsm_registra_transicao(fsm_estado_t estado, fsm_evento_t evento, fsm_acao_t acao, fsm_estado_t prox_estado)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00025">fsm.c:25</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/da5/classFSM_a6d28dcad43166c03b061f129a8759018_icgraph.svg" width="479" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a6333686f3fb3b86490c72432702aec5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6333686f3fb3b86490c72432702aec5f">&#9670;&nbsp;</a></span>fsm_obter_acao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a> fsm_obter_acao </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>&#160;</td>
+          <td class="paramname"><em>estado</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a>&#160;</td>
+          <td class="paramname"><em>codigo_evento</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna qual ação deve ser executada a partir de um estado e um evento. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">estado</td><td>Estado atual </td></tr>
+    <tr><td class="paramname">codigo_evento</td><td>Evento ocorrido </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Ação a ser executada </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/da5/classFSM_a6333686f3fb3b86490c72432702aec5f_icgraph.svg" width="288" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a46ac18de87ce6e6447811e2b506a5f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ac18de87ce6e6447811e2b506a5f19">&#9670;&nbsp;</a></span>fsm_obter_proximo_estado()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> fsm_obter_proximo_estado </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>&#160;</td>
+          <td class="paramname"><em>estado</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a>&#160;</td>
+          <td class="paramname"><em>codigo_evento</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retorna qual o próximo estado a partir do estado atual e um evento. </p>
+<dl class="params"><dt>Parâmetros</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">estado</td><td>Estado atual </td></tr>
+    <tr><td class="paramname">codigo_evento</td><td>Evento ocorrido </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Retorna</dt><dd>Ação a ser executada </dd></dl>
+<div class="dynheader">
+Este é o diagrama das funções que utilizam esta função:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d7/da5/classFSM_a46ac18de87ce6e6447811e2b506a5f19_icgraph.svg" width="312" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<hr/>A documentação para esta classe foi gerada a partir do seguinte arquivo:<ul>
+<li>inc/<a class="el" href="../../dd/d81/fsm_8h_source.html">fsm.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../d7/da5/classFSM.html">FSM</a></li>
+    <li class="footer">Gerado em Terça, 5 de Maio de 2020 22:59:03 para Vending Machine por
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
+  </ul>
+</div>
+</body>
+</html>

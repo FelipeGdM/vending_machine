@@ -1,5 +1,5 @@
 var display_8h =
 [
-    [ "display_exibe_msg", "d4/d68/display_8h.html#ab40bbdd654d01b8ee4e3318f96addb0d", null ],
-    [ "display_init", "d4/d68/display_8h.html#a8d41c12af4f6e6faad84e1f21f99b3e1", null ]
+    [ "display_dinheiro", "d4/d68/display_8h.html#a9ced6f5e0d543d810579c1f38153176c", null ],
+    [ "display_p_dinheiro", "d4/d68/display_8h.html#acdaad5f3f6b2eccae51f58c944837ab9", null ]
 ];

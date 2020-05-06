@@ -1,12 +1,21 @@
 var searchData=
 [
+  ['falha_5fhardware',['FALHA_HARDWARE',['../db/db0/sistema_8h.html#a01c12170c4e3df5a9114aac5a1da16b7',1,'sistema.h']]],
   ['false',['false',['../db/db0/sistema_8h.html#a65e9886d74aaee76545e83dd09011727',1,'sistema.h']]],
-  ['fechar_5fmaquina',['FECHAR_MAQUINA',['../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914ac37de3c55941b78b56793e31ee708a3c',1,'sistema.h']]],
+  ['finaliza_5fcompra',['FINALIZA_COMPRA',['../dd/d81/fsm_8h.html#a37d6780667f914cdab18ce6304396411',1,'fsm.h']]],
+  ['fsm',['FSM',['../d7/da5/classFSM.html',1,'']]],
   ['fsm_2ec',['fsm.c',['../d8/db8/fsm_8c.html',1,'']]],
   ['fsm_2eh',['fsm.h',['../dd/d81/fsm_8h.html',1,'']]],
-  ['fsm_5facao_5ftransicao_5festados',['fsm_acao_transicao_estados',['../d8/db8/fsm_8c.html#a68eaa33906c70cd32f9538fe2b973fd6',1,'fsm.c']]],
-  ['fsm_5finit',['fsm_init',['../d8/db8/fsm_8c.html#a6d28dcad43166c03b061f129a8759018',1,'fsm_init():&#160;fsm.c'],['../dd/d81/fsm_8h.html#a6d28dcad43166c03b061f129a8759018',1,'fsm_init():&#160;fsm.c']]],
-  ['fsm_5fobter_5facao',['fsm_obter_acao',['../d8/db8/fsm_8c.html#a17f1d0bc0f8f7d0e109dd45d28e72921',1,'fsm_obter_acao(estado_t estado, evento_t codigo_evento):&#160;fsm.c'],['../dd/d81/fsm_8h.html#a17f1d0bc0f8f7d0e109dd45d28e72921',1,'fsm_obter_acao(estado_t estado, evento_t codigo_evento):&#160;fsm.c']]],
-  ['fsm_5fobter_5fproximo_5festado',['fsm_obter_proximo_estado',['../d8/db8/fsm_8c.html#ab1c78c9c801d6c70d674a1a040dd1662',1,'fsm_obter_proximo_estado(estado_t estado, evento_t codigo_evento):&#160;fsm.c'],['../dd/d81/fsm_8h.html#ab1c78c9c801d6c70d674a1a040dd1662',1,'fsm_obter_proximo_estado(estado_t estado, evento_t codigo_evento):&#160;fsm.c']]],
-  ['fsm_5fproximo_5festado_5ftransicao_5festados',['fsm_proximo_estado_transicao_estados',['../d8/db8/fsm_8c.html#a3a18690465bfb194e3765ca7d02f70f9',1,'fsm.c']]]
+  ['fsm_5facao_5fpara_5ftodo_5fevento',['fsm_acao_para_todo_evento',['../d8/db8/fsm_8c.html#a954806c7e30a08c9990eb5e0b8b8b2e9',1,'fsm.c']]],
+  ['fsm_5facao_5ft',['fsm_acao_t',['../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5',1,'FSM']]],
+  ['fsm_5facao_5ftransicao_5festados',['fsm_acao_transicao_estados',['../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1',1,'fsm.c']]],
+  ['fsm_5fconecta_5festado_5fevento_5facao',['fsm_conecta_estado_evento_acao',['../d8/db8/fsm_8c.html#a6f99d3d8c21f868bfb9629733a533eae',1,'fsm.c']]],
+  ['fsm_5festado_5ft',['fsm_estado_t',['../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f',1,'FSM']]],
+  ['fsm_5fevento_5ft',['fsm_evento_t',['../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469',1,'FSM']]],
+  ['fsm_5finit',['fsm_init',['../d7/da5/classFSM.html#a6d28dcad43166c03b061f129a8759018',1,'FSM::fsm_init()'],['../d8/db8/fsm_8c.html#a6d28dcad43166c03b061f129a8759018',1,'fsm_init():&#160;fsm.c']]],
+  ['fsm_5fobter_5facao',['fsm_obter_acao',['../d7/da5/classFSM.html#a6333686f3fb3b86490c72432702aec5f',1,'FSM::fsm_obter_acao()'],['../d8/db8/fsm_8c.html#a6333686f3fb3b86490c72432702aec5f',1,'fsm_obter_acao():&#160;fsm.c']]],
+  ['fsm_5fobter_5fproximo_5festado',['fsm_obter_proximo_estado',['../d7/da5/classFSM.html#a46ac18de87ce6e6447811e2b506a5f19',1,'FSM::fsm_obter_proximo_estado()'],['../d8/db8/fsm_8c.html#a46ac18de87ce6e6447811e2b506a5f19',1,'fsm_obter_proximo_estado():&#160;fsm.c']]],
+  ['fsm_5fproximo_5festado_5ftransicao_5festados',['fsm_proximo_estado_transicao_estados',['../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57',1,'fsm.c']]],
+  ['fsm_5fregistra_5ftransicao',['fsm_registra_transicao',['../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e',1,'fsm.c']]],
+  ['fsm_5ftransicao_5festado',['fsm_transicao_estado',['../d8/db8/fsm_8c.html#a6110b3fb15000aecd26923b6619811fc',1,'fsm.c']]]
 ];

@@ -1,3 +1,7 @@
 <map id="Estoque::estoque_index_from_id" name="Estoque::estoque_index_from_id">
-<area shape="rect" id="node2" href="$d5/d5c/estoque_8c.html#aa09ee2ee9e6e6bc43b8e3ca43eca8ac6" title="estoque_produto_add" alt="" coords="252,13,427,39"/>
+<area shape="rect" id="node2" href="$d5/d5c/estoque_8c.html#ad5dca84697cb502491e8a815eeaa9de5" title="estoque_produto_add" alt="" coords="260,5,435,32"/>
+<area shape="rect" id="node3" href="$d5/d5c/estoque_8c.html#a2d93887a8d89def26bd091fd3bc4e4d7" title="estoque_compra_valida" alt="" coords="252,56,443,83"/>
+<area shape="rect" id="node4" href="$d5/d5c/estoque_8c.html#a5e2fb15ec177cdbc857d88cd0cfa1b3e" title="estoque_calcula_troco" alt="" coords="252,107,443,133"/>
+<area shape="rect" id="node5" href="$d0/d29/main_8c.html#a5422318cb6d27f076643e8e0161dbc6b" title="executar_acao" alt="" coords="491,107,617,133"/>
+<area shape="rect" id="node6" href="$d0/d29/main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="main" alt="" coords="665,107,720,133"/>
 </map>

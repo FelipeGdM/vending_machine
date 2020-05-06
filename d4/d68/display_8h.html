@@ -81,30 +81,90 @@ $(document).ready(function(){initNavTree('d4/d68/display_8h.html','../../');});
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Definições e Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Referência do Arquivo display.h</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Gráfico de dependência de inclusões para display.h:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d1e/display_8h__incl.svg" width="138" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/d1e/display_8h__incl.svg" width="200" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div><div class="textblock"><div class="dynheader">
 Este grafo mostra quais arquivos estão direta ou indiretamente relacionados com este arquivo:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/db6/display_8h__dep__incl.svg" width="264" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d6/db6/display_8h__dep__incl.svg" width="622" height="112"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 </div>
 <p><a href="../../d4/d68/display_8h_source.html">Vá para o código-fonte deste arquivo.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a9ced6f5e0d543d810579c1f38153176c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/display_8h.html#a9ced6f5e0d543d810579c1f38153176c">display_dinheiro</a>(dinheiro)&#160;&#160;&#160;printf(&quot;R$ %hhu.%02hhu&quot;, dinheiro.reais, dinheiro.centavos)</td></tr>
+<tr class="memdesc:a9ced6f5e0d543d810579c1f38153176c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime na tela uma quantia de dinheiro formatada com R$.  <a href="#a9ced6f5e0d543d810579c1f38153176c">Mais...</a><br /></td></tr>
+<tr class="separator:a9ced6f5e0d543d810579c1f38153176c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdaad5f3f6b2eccae51f58c944837ab9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d68/display_8h.html#acdaad5f3f6b2eccae51f58c944837ab9">display_p_dinheiro</a>(dinheiro)&#160;&#160;&#160;printf(&quot;R$ %hhu.%02hhu&quot;, dinheiro-&gt;reais, dinheiro-&gt;centavos)</td></tr>
+<tr class="memdesc:acdaad5f3f6b2eccae51f58c944837ab9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Imprime na tela uma quantia de dinheiro a partir de um ponteiro formatada com R$.  <a href="#acdaad5f3f6b2eccae51f58c944837ab9">Mais...</a><br /></td></tr>
+<tr class="separator:acdaad5f3f6b2eccae51f58c944837ab9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Definições e macros</h2>
+<a id="a9ced6f5e0d543d810579c1f38153176c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ced6f5e0d543d810579c1f38153176c">&#9670;&nbsp;</a></span>display_dinheiro</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define display_dinheiro</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dinheiro</td><td>)</td>
+          <td>&#160;&#160;&#160;printf(&quot;R$ %hhu.%02hhu&quot;, dinheiro.reais, dinheiro.centavos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime na tela uma quantia de dinheiro formatada com R$. </p>
+
+<p class="definition">Definição na linha <a class="el" href="../../d4/d68/display_8h_source.html#l00021">21</a> do arquivo <a class="el" href="../../d4/d68/display_8h_source.html">display.h</a>.</p>
+
+</div>
+</div>
+<a id="acdaad5f3f6b2eccae51f58c944837ab9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdaad5f3f6b2eccae51f58c944837ab9">&#9670;&nbsp;</a></span>display_p_dinheiro</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define display_p_dinheiro</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">dinheiro</td><td>)</td>
+          <td>&#160;&#160;&#160;printf(&quot;R$ %hhu.%02hhu&quot;, dinheiro-&gt;reais, dinheiro-&gt;centavos)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Imprime na tela uma quantia de dinheiro a partir de um ponteiro formatada com R$. </p>
+
+<p class="definition">Definição na linha <a class="el" href="../../d4/d68/display_8h_source.html#l00027">27</a> do arquivo <a class="el" href="../../d4/d68/display_8h_source.html">display.h</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_bfccd401955b95cf8c75461437045ac0.html">inc</a></li><li class="navelem"><a class="el" href="../../d4/d68/display_8h.html">display.h</a></li>
-    <li class="footer">Gerado em Segunda, 4 de Maio de 2020 23:43:29 para Vending Machine por
+    <li class="footer">Gerado em Terça, 5 de Maio de 2020 22:59:03 para Vending Machine por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

@@ -104,8 +104,8 @@ Funções</h2></td></tr>
 <tr class="separator:ab96e8a4130d807871058321aa4ab0630"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f136c35489552ad219e9faf38f067a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d99/teclado_8c.html#ab3f136c35489552ad219e9faf38f067a">teclado_le_entrada</a> (char *buffer)</td></tr>
 <tr class="separator:ab3f136c35489552ad219e9faf38f067a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accc923a97665be4f8f473de70bf3641e"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d99/teclado_8c.html#accc923a97665be4f8f473de70bf3641e">teclado_le_prod_id</a> ()</td></tr>
-<tr class="separator:accc923a97665be4f8f473de70bf3641e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcab3af6f77839a2ff8e5e38dd3b1746"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d99/teclado_8c.html#abcab3af6f77839a2ff8e5e38dd3b1746">teclado_le_prod_id</a> (uint8_t *output)</td></tr>
+<tr class="separator:abcab3af6f77839a2ff8e5e38dd3b1746"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
 <div class="textblock"><dl class="section author"><dt>Autor</dt><dd>Felipe Gomes de Melo <a href="#" onclick="location.href='mai'+'lto:'+'fel'+'ip'+'egm'+'el'+'o@u'+'sp'+'.br'; return false;">felip<span style="display: none;">.nosp@m.</span>egme<span style="display: none;">.nosp@m.</span>lo@us<span style="display: none;">.nosp@m.</span>p.br</a> </dd></dl>
@@ -148,19 +148,13 @@ Funções</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parâmetros</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buffer</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 <p class="definition">Definição na linha <a class="el" href="../../df/d99/teclado_8c_source.html#l00019">19</a> do arquivo <a class="el" href="../../df/d99/teclado_8c_source.html">teclado.c</a>.</p>
 <div class="fragment"><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                      {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    scanf(<span class="stringliteral">&quot;%s&quot;</span>, buffer);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
-<a id="accc923a97665be4f8f473de70bf3641e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#accc923a97665be4f8f473de70bf3641e">&#9670;&nbsp;</a></span>teclado_le_prod_id()</h2>
+<a id="abcab3af6f77839a2ff8e5e38dd3b1746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcab3af6f77839a2ff8e5e38dd3b1746">&#9670;&nbsp;</a></span>teclado_le_prod_id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -168,14 +162,15 @@ Funções</h2></td></tr>
         <tr>
           <td class="memname">uint8_t teclado_le_prod_id </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>output</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definição na linha <a class="el" href="../../df/d99/teclado_8c_source.html#l00023">23</a> do arquivo <a class="el" href="../../df/d99/teclado_8c_source.html">teclado.c</a>.</p>
-<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                             {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    uint8_t output;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    scanf(<span class="stringliteral">&quot;%hhu&quot;</span>, &amp;output);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> output;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                            {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    scanf(<span class="stringliteral">&quot;%hhu&quot;</span>, output);</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
@@ -184,7 +179,7 @@ Funções</h2></td></tr>
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../df/d99/teclado_8c.html">teclado.c</a></li>
-    <li class="footer">Gerado em Segunda, 4 de Maio de 2020 23:43:30 para Vending Machine por
+    <li class="footer">Gerado em Terça, 5 de Maio de 2020 22:59:03 para Vending Machine por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

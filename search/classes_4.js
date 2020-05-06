@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['machina',['Machina',['../d1/df5/classMachina.html',1,'']]]
+  ['estoque',['Estoque',['../db/dff/classEstoque.html',1,'']]]
 ];

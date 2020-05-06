@@ -1,12 +1,25 @@
 <map id="main" name="main">
-<area shape="rect" id="node2" href="$d8/db8/fsm_8c.html#a17f1d0bc0f8f7d0e109dd45d28e72921" title="fsm_obter_acao" alt="" coords="148,31,283,57"/>
-<area shape="rect" id="node3" href="$d8/db8/fsm_8c.html#ab1c78c9c801d6c70d674a1a040dd1662" title="fsm_obter_proximo_estado" alt="" coords="108,81,323,108"/>
-<area shape="rect" id="node4" href="$d1/df5/classMachina.html#a17c3a5d0ed70dbc9fbecc9a9c737c075" title="Inicializa componentes da vending machine. " alt="" coords="120,132,311,159"/>
-<area shape="rect" id="node11" href="$d0/d29/main_8c.html#a25a325d4158de41b2d0177e744e32e7f" title="obter_evento" alt="" coords="156,183,275,209"/>
-<area shape="rect" id="node5" href="$d8/db8/fsm_8c.html#a6d28dcad43166c03b061f129a8759018" title="fsm_init" alt="" coords="439,5,525,32"/>
-<area shape="rect" id="node6" href="$de/d0a/classBoca.html#ad0b071292b6c58df7adb93d30cc5a0fa" title="Função de inicialização do componente. " alt="" coords="387,56,577,83"/>
-<area shape="rect" id="node7" href="$d1/d1b/classAtuadores.html#a32b7777f9c06dafde01e55378c9e1af6" title="Função de inicialização do componente. " alt="" coords="371,107,593,133"/>
-<area shape="rect" id="node8" href="$d6/dd6/classDisplay.html#a8d41c12af4f6e6faad84e1f21f99b3e1" title="Função de inicialização do componente. " alt="" coords="387,157,577,184"/>
-<area shape="rect" id="node9" href="$de/dcb/classTeclado.html#ab96e8a4130d807871058321aa4ab0630" title="Função de inicialização do componente. " alt="" coords="387,208,577,235"/>
-<area shape="rect" id="node10" href="$df/d87/classTrava.html#a525662648702cd87a3832730d7e37223" title="Função de inicialização do componente. " alt="" coords="403,259,561,285"/>
+<area shape="rect" id="node2" href="$db/dff/classEstoque.html#a2ee235ff9ba6088c94a93a0925477a1c" title="Imprime na tela uma lista dos produtos cadastrados. " alt="" coords="375,5,565,32"/>
+<area shape="rect" id="node3" href="$d0/d29/main_8c.html#a5422318cb6d27f076643e8e0161dbc6b" title="executar_acao" alt="" coords="144,293,271,320"/>
+<area shape="rect" id="node14" href="$d7/da5/classFSM.html#a6333686f3fb3b86490c72432702aec5f" title="Retorna qual ação deve ser executada a partir de um estado e um evento. " alt="" coords="120,344,295,371"/>
+<area shape="rect" id="node15" href="$d7/da5/classFSM.html#a46ac18de87ce6e6447811e2b506a5f19" title="Retorna qual o próximo estado a partir do estado atual e um evento. " alt="" coords="108,395,307,437"/>
+<area shape="rect" id="node16" href="$d1/df5/classMachina.html#a17c3a5d0ed70dbc9fbecc9a9c737c075" title="Inicializa componentes da vending machine. " alt="" coords="112,769,303,796"/>
+<area shape="rect" id="node4" href="$d1/d1b/classAtuadores.html#abc1cd7f170c8442f5a7cb93353f98a1b" title="Envia o comando de liberação do produto indicado. " alt="" coords="379,57,561,98"/>
+<area shape="rect" id="node5" href="$de/d0a/classBoca.html#ad9c22e6b5d16bbaf19d1a18c345a74ee" title="Recebe uma quantia de dinheiro. " alt="" coords="367,122,573,163"/>
+<area shape="rect" id="node6" href="$de/d0a/classBoca.html#a27c6c473ad1d185ca454c35a1b5c2ed7" title="Recebe uma quantia de dinheiro. " alt="" coords="367,187,573,229"/>
+<area shape="rect" id="node7" href="$d4/d7f/classCaixa.html#a41e7c35f4803f6c8423fde1b37553fea" title="Libera uma quantia de dinheiro correspondente ao troco da compra. " alt="" coords="387,253,553,294"/>
+<area shape="rect" id="node8" href="$d4/d7f/classCaixa.html#a10ed306a1ac30130747a2b76751f0e8d" title="Acrescenta uma quantia de dinheiro ao troco disponível. " alt="" coords="387,318,553,359"/>
+<area shape="rect" id="node9" href="$d6/dd6/classDisplay.html#a5ad5c75a47069f4c7f5548c9381684d5" title="Exibe uma mensagem para o usuário por meio do display. " alt="" coords="355,384,585,411"/>
+<area shape="rect" id="node10" href="$d5/d5c/estoque_8c.html#a5e2fb15ec177cdbc857d88cd0cfa1b3e" title="estoque_calcula_troco" alt="" coords="375,435,565,461"/>
+<area shape="rect" id="node12" href="$db/dff/classEstoque.html#a2d93887a8d89def26bd091fd3bc4e4d7" title="Define se os dados inseridos pelos clientes configuram uma compra válida. " alt="" coords="367,486,573,527"/>
+<area shape="rect" id="node13" href="$de/dcb/classTeclado.html#accc923a97665be4f8f473de70bf3641e" title="Lê o código de produto digitado pelo usuário. " alt="" coords="383,551,557,593"/>
+<area shape="rect" id="node11" href="$db/dff/classEstoque.html#a65a97d14e6d4caebb236121f8f12679c" title="Realiza uma busca no estoque a partir de um id de produto. " alt="" coords="633,427,832,469"/>
+<area shape="rect" id="node17" href="$d7/da5/classFSM.html#a6d28dcad43166c03b061f129a8759018" title="Função de inicialização da máquina de estados. " alt="" coords="407,617,533,644"/>
+<area shape="rect" id="node18" href="$db/dff/classEstoque.html#ae981f8c5ceb2ff989161e456f7db68c7" title="Função de inicialização do estoque com alguns produtos base. " alt="" coords="375,668,565,695"/>
+<area shape="rect" id="node19" href="$de/d0a/classBoca.html#ad0b071292b6c58df7adb93d30cc5a0fa" title="Função de inicialização do componente. " alt="" coords="375,719,565,745"/>
+<area shape="rect" id="node20" href="$d1/d1b/classAtuadores.html#a32b7777f9c06dafde01e55378c9e1af6" title="Função de inicialização do componente. " alt="" coords="359,769,581,796"/>
+<area shape="rect" id="node21" href="$d6/dd6/classDisplay.html#a8d41c12af4f6e6faad84e1f21f99b3e1" title="Função de inicialização do componente. " alt="" coords="375,820,565,847"/>
+<area shape="rect" id="node22" href="$de/dcb/classTeclado.html#ab96e8a4130d807871058321aa4ab0630" title="Função de inicialização do componente. " alt="" coords="375,871,565,897"/>
+<area shape="rect" id="node23" href="$df/d87/classTrava.html#a525662648702cd87a3832730d7e37223" title="Função de inicialização do componente. " alt="" coords="391,921,549,948"/>
+<area shape="rect" id="node24" href="$d4/d7f/classCaixa.html#ae73fa20544755e13bae7f29f98718026" title="Função de inicialização do componente. " alt="" coords="367,972,573,999"/>
 </map>

@@ -8,24 +8,24 @@
  viewBox="0.00 0.00 318.00 28.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 24)">
 <title>estoque_init</title>
-<!-- Node7 -->
+<!-- Node15 -->
 <g id="node1" class="node">
-<title>Node7</title>
+<title>Node15</title>
 <polygon fill="#bfbfbf" stroke="#000000" points="0,-.5 0,-19.5 89,-19.5 89,-.5 0,-.5"/>
 <text text-anchor="middle" x="44.5" y="-7.5" font-family="Fira Code" font-size="10.00" fill="#000000">estoque_init</text>
 </g>
-<!-- Node8 -->
+<!-- Node16 -->
 <g id="node2" class="node">
-<title>Node8</title>
-<g id="a_node2"><a xlink:href="../../db/dff/classEstoque.html#aa09ee2ee9e6e6bc43b8e3ca43eca8ac6" target="_top" xlink:title="Adiciona uma nova entrada no estoque da vending machine. ">
+<title>Node16</title>
+<g id="a_node2"><a xlink:href="../../db/dff/classEstoque.html#ad5dca84697cb502491e8a815eeaa9de5" target="_top" xlink:title="Adiciona uma nova entrada no estoque da vending machine. ">
 <polygon fill="none" stroke="#000000" points="125,-.5 125,-19.5 310,-19.5 310,-.5 125,-.5"/>
 <text text-anchor="middle" x="217.5" y="-7.5" font-family="Fira Code" font-size="10.00" fill="#000000">Estoque::estoque_produto_add</text>
 </a>
 </g>
 </g>
-<!-- Node7&#45;&gt;Node8 -->
+<!-- Node15&#45;&gt;Node16 -->
 <g id="edge1" class="edge">
-<title>Node7&#45;&gt;Node8</title>
+<title>Node15&#45;&gt;Node16</title>
 <path fill="none" stroke="#191970" d="M89.0518,-10C97.1259,-10 105.8434,-10 114.8012,-10"/>
 <polygon fill="#191970" stroke="#191970" points="114.9956,-13.5001 124.9955,-10 114.9955,-6.5001 114.9956,-13.5001"/>
 </g>

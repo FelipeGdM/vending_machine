@@ -82,6 +82,7 @@ $(document).ready(function(){initNavTree('d8/db8/fsm_8c.html','../../');});
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Definições e Macros</a> &#124;
 <a href="#func-members">Funções</a> &#124;
 <a href="#var-members">Variáveis</a>  </div>
   <div class="headertitle">
@@ -91,31 +92,42 @@ $(document).ready(function(){initNavTree('d8/db8/fsm_8c.html','../../');});
 
 <p>Implementação de uma máquina de estados finitos (finite state machine)  
 <a href="#details">Mais...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../db/db0/sistema_8h_source.html">sistema.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../dd/d81/fsm_8h_source.html">fsm.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/db0/sistema_8h_source.html">sistema.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Gráfico de dependência de inclusões para fsm.c:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dcf/fsm_8c__incl.svg" width="106" height="187"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d5/dcf/fsm_8c__incl.svg" width="159" height="262"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 </div>
 <p><a href="../../d8/db8/fsm_8c_source.html">Vá para o código-fonte deste arquivo.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Definições e Macros</h2></td></tr>
+<tr class="memitem:a6f99d3d8c21f868bfb9629733a533eae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#a6f99d3d8c21f868bfb9629733a533eae">fsm_conecta_estado_evento_acao</a>(estado,  evento,  acao)&#160;&#160;&#160;<a class="el" href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a>[estado][evento] = acao</td></tr>
+<tr class="separator:a6f99d3d8c21f868bfb9629733a533eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6110b3fb15000aecd26923b6619811fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#a6110b3fb15000aecd26923b6619811fc">fsm_transicao_estado</a>(estado,  evento,  prox_estado)&#160;&#160;&#160;<a class="el" href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a>[estado][evento] = prox_estado;</td></tr>
+<tr class="separator:a6110b3fb15000aecd26923b6619811fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Funções</h2></td></tr>
+<tr class="memitem:a954806c7e30a08c9990eb5e0b8b8b2e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#a954806c7e30a08c9990eb5e0b8b8b2e9">fsm_acao_para_todo_evento</a> (<a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> estado, <a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a> acao)</td></tr>
+<tr class="separator:a954806c7e30a08c9990eb5e0b8b8b2e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd71e92c15f5812f57ef15404d9663e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a> (<a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> estado, <a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a> evento, <a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a> acao, <a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> prox_estado)</td></tr>
+<tr class="separator:aadd71e92c15f5812f57ef15404d9663e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d28dcad43166c03b061f129a8759018"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#a6d28dcad43166c03b061f129a8759018">fsm_init</a> ()</td></tr>
 <tr class="separator:a6d28dcad43166c03b061f129a8759018"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f1d0bc0f8f7d0e109dd45d28e72921"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/db0/sistema_8h.html#a662545d978f4974d0e135b292486db56">acao_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#a17f1d0bc0f8f7d0e109dd45d28e72921">fsm_obter_acao</a> (<a class="el" href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8">estado_t</a> estado, <a class="el" href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914">evento_t</a> codigo_evento)</td></tr>
-<tr class="separator:a17f1d0bc0f8f7d0e109dd45d28e72921"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1c78c9c801d6c70d674a1a040dd1662"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8">estado_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#ab1c78c9c801d6c70d674a1a040dd1662">fsm_obter_proximo_estado</a> (<a class="el" href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8">estado_t</a> estado, <a class="el" href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914">evento_t</a> codigo_evento)</td></tr>
-<tr class="separator:ab1c78c9c801d6c70d674a1a040dd1662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6333686f3fb3b86490c72432702aec5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#a6333686f3fb3b86490c72432702aec5f">fsm_obter_acao</a> (<a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> estado, <a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a> codigo_evento)</td></tr>
+<tr class="separator:a6333686f3fb3b86490c72432702aec5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46ac18de87ce6e6447811e2b506a5f19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#a46ac18de87ce6e6447811e2b506a5f19">fsm_obter_proximo_estado</a> (<a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> estado, <a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a> codigo_evento)</td></tr>
+<tr class="separator:a46ac18de87ce6e6447811e2b506a5f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variáveis</h2></td></tr>
-<tr class="memitem:a68eaa33906c70cd32f9538fe2b973fd6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/db0/sistema_8h.html#a662545d978f4974d0e135b292486db56">acao_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#a68eaa33906c70cd32f9538fe2b973fd6">fsm_acao_transicao_estados</a> [<a class="el" href="../../db/db0/sistema_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>][<a class="el" href="../../db/db0/sistema_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>]</td></tr>
-<tr class="separator:a68eaa33906c70cd32f9538fe2b973fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a18690465bfb194e3765ca7d02f70f9"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8">estado_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#a3a18690465bfb194e3765ca7d02f70f9">fsm_proximo_estado_transicao_estados</a> [<a class="el" href="../../db/db0/sistema_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>][<a class="el" href="../../db/db0/sistema_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>]</td></tr>
-<tr class="separator:a3a18690465bfb194e3765ca7d02f70f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56fe90d39912cfa7e938c437dc278eb1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a> [<a class="el" href="../../dd/d81/fsm_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>][<a class="el" href="../../dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>]</td></tr>
+<tr class="separator:a56fe90d39912cfa7e938c437dc278eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaad03592359b5d77cb354d7fc210bb57"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a> [<a class="el" href="../../dd/d81/fsm_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>][<a class="el" href="../../dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>]</td></tr>
+<tr class="separator:aaad03592359b5d77cb354d7fc210bb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Descrição Detalhada</h2>
 <div class="textblock"><p>Implementação de uma máquina de estados finitos (finite state machine) </p>
@@ -124,7 +136,114 @@ Variáveis</h2></td></tr>
 <dl class="section copyright"><dt>Copyright</dt><dd>MIT License - Copyright (c) 2020 </dd></dl>
 
 <p class="definition">Definição no arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
-</div><h2 class="groupheader">Funções</h2>
+</div><h2 class="groupheader">Definições e macros</h2>
+<a id="a6f99d3d8c21f868bfb9629733a533eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f99d3d8c21f868bfb9629733a533eae">&#9670;&nbsp;</a></span>fsm_conecta_estado_evento_acao</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fsm_conecta_estado_evento_acao</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">estado, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">evento, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">acao&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a>[estado][evento] = acao</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00022">22</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
+
+</div>
+</div>
+<a id="a6110b3fb15000aecd26923b6619811fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6110b3fb15000aecd26923b6619811fc">&#9670;&nbsp;</a></span>fsm_transicao_estado</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define fsm_transicao_estado</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">estado, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">evento, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">prox_estado&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a>[estado][evento] = prox_estado;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00023">23</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Funções</h2>
+<a id="a954806c7e30a08c9990eb5e0b8b8b2e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a954806c7e30a08c9990eb5e0b8b8b2e9">&#9670;&nbsp;</a></span>fsm_acao_para_todo_evento()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fsm_acao_para_todo_evento </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>&#160;</td>
+          <td class="paramname"><em>estado</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a>&#160;</td>
+          <td class="paramname"><em>acao</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00017">17</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/db8/fsm_8c_source.html#l00014">fsm_acao_transicao_estados</a> e <a class="el" href="../../dd/d81/fsm_8h_source.html#l00086">NUM_EVENTOS</a>.</p>
+<div class="fragment"><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                                                                    {</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span> (uint8_t j = 0; j &lt; <a class="code" href="../../dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>; j++)</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        <a class="code" href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a>[estado][j] = acao;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div><div class="ttc" id="fsm_8h_html_a6179415cb58b23d7808fcca9583d8ce1"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a></div><div class="ttdeci">#define NUM_EVENTOS</div><div class="ttdoc">Quantidade de eventos existentes. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00086">fsm.h:86</a></div></div>
+<div class="ttc" id="fsm_8c_html_a56fe90d39912cfa7e938c437dc278eb1"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a></div><div class="ttdeci">static fsm_acao_t fsm_acao_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00014">fsm.c:14</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="a6d28dcad43166c03b061f129a8759018"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d28dcad43166c03b061f129a8759018">&#9670;&nbsp;</a></span>fsm_init()</h2>
 
@@ -140,39 +259,69 @@ Variáveis</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00016">16</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
+<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00030">30</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d8/db8/fsm_8c_source.html#l00013">fsm_acao_transicao_estados</a>, <a class="el" href="../../d8/db8/fsm_8c_source.html#l00014">fsm_proximo_estado_transicao_estados</a>, <a class="el" href="../../db/db0/sistema_8h_source.html#l00043">NENHUMA_ACAO</a>, <a class="el" href="../../db/db0/sistema_8h_source.html#l00057">NUM_ESTADOS</a> e <a class="el" href="../../db/db0/sistema_8h_source.html#l00062">NUM_EVENTOS</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;               {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    uint8_t i;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    uint8_t j;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../db/db0/sistema_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>; i++) {</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="../../db/db0/sistema_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>; j++) {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <a class="code" href="../../d8/db8/fsm_8c.html#a68eaa33906c70cd32f9538fe2b973fd6">fsm_acao_transicao_estados</a>[i][j] = <a class="code" href="../../db/db0/sistema_8h.html#a662545d978f4974d0e135b292486db56a1225a75b53010193d5df1b3c69820f64">NENHUMA_ACAO</a>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;            <a class="code" href="../../d8/db8/fsm_8c.html#a3a18690465bfb194e3765ca7d02f70f9">fsm_proximo_estado_transicao_estados</a>[i][j] = i;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;} <span class="comment">// fsm_init</span></div><div class="ttc" id="sistema_8h_html_a6179415cb58b23d7808fcca9583d8ce1"><div class="ttname"><a href="../../db/db0/sistema_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a></div><div class="ttdeci">#define NUM_EVENTOS</div><div class="ttdoc">Quantidade de eventos existentes. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/sistema_8h_source.html#l00062">sistema.h:62</a></div></div>
-<div class="ttc" id="fsm_8c_html_a3a18690465bfb194e3765ca7d02f70f9"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#a3a18690465bfb194e3765ca7d02f70f9">fsm_proximo_estado_transicao_estados</a></div><div class="ttdeci">static estado_t fsm_proximo_estado_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00014">fsm.c:14</a></div></div>
-<div class="ttc" id="sistema_8h_html_ad8eab5bf94794d159e0be32e3373604d"><div class="ttname"><a href="../../db/db0/sistema_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a></div><div class="ttdeci">#define NUM_ESTADOS</div><div class="ttdoc">Quantidade de estados existentes. </div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/sistema_8h_source.html#l00057">sistema.h:57</a></div></div>
-<div class="ttc" id="fsm_8c_html_a68eaa33906c70cd32f9538fe2b973fd6"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#a68eaa33906c70cd32f9538fe2b973fd6">fsm_acao_transicao_estados</a></div><div class="ttdeci">static acao_t fsm_acao_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00013">fsm.c:13</a></div></div>
-<div class="ttc" id="sistema_8h_html_a662545d978f4974d0e135b292486db56a1225a75b53010193d5df1b3c69820f64"><div class="ttname"><a href="../../db/db0/sistema_8h.html#a662545d978f4974d0e135b292486db56a1225a75b53010193d5df1b3c69820f64">NENHUMA_ACAO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/db0/sistema_8h_source.html#l00043">sistema.h:43</a></div></div>
+<p class="reference">Referências <a class="el" href="../../dd/d81/fsm_8h_source.html#l00025">AGUARDA_DINHEIRO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00026">AGUARDA_PROD_ID</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00073">ATUALIZA_TROCO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00032">ATUALIZACAO_TROCO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00071">CANCELA_COMPRA</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00048">COMPRA_CANCELADA</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00044">COMPRA_INICIADA</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00047">COMPRA_VALIDADA</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00067">CONFERE_COMPRA</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00045">DINHEIRO_INSERIDO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00072">ENTRA_MANUTENCAO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00070">FINALIZA_COMPRA</a>, <a class="el" href="../../d8/db8/fsm_8c_source.html#l00014">fsm_acao_transicao_estados</a>, <a class="el" href="../../d8/db8/fsm_8c_source.html#l00015">fsm_proximo_estado_transicao_estados</a>, <a class="el" href="../../d8/db8/fsm_8c_source.html#l00025">fsm_registra_transicao()</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00043">INICIALIZACAO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00024">INICIO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00068">LIBERA_PRODUTO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00069">LIBERA_TROCO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00028">LIBERACAO_PRODUTO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00029">LIBERACAO_TROCO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00031">MANUTENCAO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00051">MAQUINA_ABERTA</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00052">MAQUINA_FECHADA</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00064">MOSTRA_OPCOES</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00063">NENHUMA_ACAO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00081">NUM_ESTADOS</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00086">NUM_EVENTOS</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00065">PEDE_DINHEIRO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00066">PEDE_PROD_ID</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00046">PROD_ID_INSERIDO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00049">PRODUTO_LIBERADO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00074">SAI_MANUTENCAO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00053">TROCO_INSERIDO</a>, <a class="el" href="../../dd/d81/fsm_8h_source.html#l00050">TROCO_LIBERADO</a> e <a class="el" href="../../dd/d81/fsm_8h_source.html#l00027">VALIDACAO_COMPRA</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;               {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    uint8_t i;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    uint8_t j;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">for</span> (i = 0; i &lt; <a class="code" href="../../dd/d81/fsm_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>; i++) {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">for</span> (j = 0; j &lt; <a class="code" href="../../dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>; j++) {</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            <a class="code" href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a>[i][j] = <a class="code" href="../../dd/d81/fsm_8h.html#a1225a75b53010193d5df1b3c69820f64">NENHUMA_ACAO</a>;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a>[i][j] = i;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        }</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    }</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a73685c89db026628fe9b99f12a31b8d2">COMPRA_INICIADA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#abad76246be5d00b3d6fae74bc1c316fe">PEDE_DINHEIRO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#aad75e2334ab7ea4282fb3f80929efc03">AGUARDA_DINHEIRO</a>);</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#aad75e2334ab7ea4282fb3f80929efc03">AGUARDA_DINHEIRO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a6ac671cf924e21f96b65ea0abbfee904">DINHEIRO_INSERIDO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a27dc3ecf4feff3ccab9973bec8493d3a">PEDE_PROD_ID</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a71f0bdbdde51381f6e236f41c5101017">AGUARDA_PROD_ID</a>);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a71f0bdbdde51381f6e236f41c5101017">AGUARDA_PROD_ID</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a879973add0597b5198c786369fa6a225">PROD_ID_INSERIDO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ac6dcb73a073d4ac834ab0bc1de0c9bd4">CONFERE_COMPRA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#aaef10612335144c85732c1ad34087da7">VALIDACAO_COMPRA</a>);</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#aaef10612335144c85732c1ad34087da7">VALIDACAO_COMPRA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a72194d85ed2cf3c71c496eb7103e14a0">COMPRA_VALIDADA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#abee6314348afa6437479ac10873278a9">LIBERA_PRODUTO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ae7b678267774e49bd57f2bafbceeb0ac">LIBERACAO_PRODUTO</a>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#ae7b678267774e49bd57f2bafbceeb0ac">LIBERACAO_PRODUTO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a10274519494252cac661e4e4fef1d89a">PRODUTO_LIBERADO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a681b2c1c5de9d11660df1ed580879927">LIBERA_TROCO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a3a9af81337e5e7ceea5a6901c745cdec">LIBERACAO_TROCO</a>);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a3a9af81337e5e7ceea5a6901c745cdec">LIBERACAO_TROCO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a121e2b39b72704c90c1e4c761defba2e">TROCO_LIBERADO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a37d6780667f914cdab18ce6304396411">FINALIZA_COMPRA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#aaef10612335144c85732c1ad34087da7">VALIDACAO_COMPRA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ab4bee518ef8759d9d1213f6f6b1be882">COMPRA_CANCELADA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ac4ee4eed0d62a7f26a5a256e0c579b74">CANCELA_COMPRA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a8f63159423107cadf1f0d7fa4c21849f">INICIALIZACAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a959ef19cec55fc08739a619e776150c3">MOSTRA_OPCOES</a>, <a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a66d9824b4a981372f1bab9afd7bcba0b">MAQUINA_ABERTA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ac63c2a797e85bfdec824c66ea3f2aade">ENTRA_MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a66d9824b4a981372f1bab9afd7bcba0b">MAQUINA_ABERTA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#ac63c2a797e85bfdec824c66ea3f2aade">ENTRA_MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a344b87e35d49f9854793b13885e1066e">TROCO_INSERIDO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a364d1b580c3be4ca1f48be872c88cdce">ATUALIZA_TROCO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a22586f8b9f4ad510e16c8169cbc49f94">ATUALIZACAO_TROCO</a>);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a22586f8b9f4ad510e16c8169cbc49f94">ATUALIZACAO_TROCO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a66d9824b4a981372f1bab9afd7bcba0b">MAQUINA_ABERTA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a8ccfecb4fbdb9b5687e8b0ecf1917acd">SAI_MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a22586f8b9f4ad510e16c8169cbc49f94">ATUALIZACAO_TROCO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a09540f1b4cceeaf074d1ba0b5ce45ea2">MAQUINA_FECHADA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a8ccfecb4fbdb9b5687e8b0ecf1917acd">SAI_MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>);</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a>(<a class="code" href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a09540f1b4cceeaf074d1ba0b5ce45ea2">MAQUINA_FECHADA</a>, <a class="code" href="../../dd/d81/fsm_8h.html#a8ccfecb4fbdb9b5687e8b0ecf1917acd">SAI_MANUTENCAO</a>, <a class="code" href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a>);</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;} <span class="comment">// fsm_init</span></div><div class="ttc" id="fsm_8h_html_a22586f8b9f4ad510e16c8169cbc49f94"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a22586f8b9f4ad510e16c8169cbc49f94">ATUALIZACAO_TROCO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00032">fsm.h:32</a></div></div>
+<div class="ttc" id="fsm_8h_html_a364d1b580c3be4ca1f48be872c88cdce"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a364d1b580c3be4ca1f48be872c88cdce">ATUALIZA_TROCO</a></div><div class="ttdoc">Atualiza a informação de troco disponível. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00073">fsm.h:73</a></div></div>
+<div class="ttc" id="fsm_8h_html_a09540f1b4cceeaf074d1ba0b5ce45ea2"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a09540f1b4cceeaf074d1ba0b5ce45ea2">MAQUINA_FECHADA</a></div><div class="ttdoc">Repositor fechou a máquina. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00052">fsm.h:52</a></div></div>
+<div class="ttc" id="fsm_8h_html_abad76246be5d00b3d6fae74bc1c316fe"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#abad76246be5d00b3d6fae74bc1c316fe">PEDE_DINHEIRO</a></div><div class="ttdoc">Pede ao cliente inserir o dinheiro necessário. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00065">fsm.h:65</a></div></div>
+<div class="ttc" id="fsm_8h_html_a8ccfecb4fbdb9b5687e8b0ecf1917acd"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a8ccfecb4fbdb9b5687e8b0ecf1917acd">SAI_MANUTENCAO</a></div><div class="ttdoc">Sai do estado de manutenção. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00074">fsm.h:74</a></div></div>
+<div class="ttc" id="fsm_8h_html_a27dc3ecf4feff3ccab9973bec8493d3a"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a27dc3ecf4feff3ccab9973bec8493d3a">PEDE_PROD_ID</a></div><div class="ttdoc">Pede ao cliente inserir o código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00066">fsm.h:66</a></div></div>
+<div class="ttc" id="fsm_8c_html_aaad03592359b5d77cb354d7fc210bb57"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a></div><div class="ttdeci">static fsm_estado_t fsm_proximo_estado_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00015">fsm.c:15</a></div></div>
+<div class="ttc" id="fsm_8h_html_aaef10612335144c85732c1ad34087da7"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#aaef10612335144c85732c1ad34087da7">VALIDACAO_COMPRA</a></div><div class="ttdoc">Máquina confere se a combinação de id e dinheiro é válida. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00027">fsm.h:27</a></div></div>
+<div class="ttc" id="fsm_8h_html_a66d9824b4a981372f1bab9afd7bcba0b"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a66d9824b4a981372f1bab9afd7bcba0b">MAQUINA_ABERTA</a></div><div class="ttdoc">Repositor abriu a máquina para manutenção. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00051">fsm.h:51</a></div></div>
+<div class="ttc" id="fsm_8h_html_abee6314348afa6437479ac10873278a9"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#abee6314348afa6437479ac10873278a9">LIBERA_PRODUTO</a></div><div class="ttdoc">Libera o produto pedido. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00068">fsm.h:68</a></div></div>
+<div class="ttc" id="fsm_8h_html_a6179415cb58b23d7808fcca9583d8ce1"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a></div><div class="ttdeci">#define NUM_EVENTOS</div><div class="ttdoc">Quantidade de eventos existentes. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00086">fsm.h:86</a></div></div>
+<div class="ttc" id="fsm_8h_html_a6b9a573288de168638e1a08242009846"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a6b9a573288de168638e1a08242009846">MANUTENCAO</a></div><div class="ttdoc">Estado de manutenção da máquina. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00031">fsm.h:31</a></div></div>
+<div class="ttc" id="fsm_8h_html_a3a9af81337e5e7ceea5a6901c745cdec"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a3a9af81337e5e7ceea5a6901c745cdec">LIBERACAO_TROCO</a></div><div class="ttdoc">Máquina irá liberar o troco. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00029">fsm.h:29</a></div></div>
+<div class="ttc" id="fsm_8h_html_aad75e2334ab7ea4282fb3f80929efc03"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#aad75e2334ab7ea4282fb3f80929efc03">AGUARDA_DINHEIRO</a></div><div class="ttdoc">Máquina aguarda código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00025">fsm.h:25</a></div></div>
+<div class="ttc" id="fsm_8h_html_ac6dcb73a073d4ac834ab0bc1de0c9bd4"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ac6dcb73a073d4ac834ab0bc1de0c9bd4">CONFERE_COMPRA</a></div><div class="ttdoc">Executa verificação da validade da compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00067">fsm.h:67</a></div></div>
+<div class="ttc" id="fsm_8h_html_a72194d85ed2cf3c71c496eb7103e14a0"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a72194d85ed2cf3c71c496eb7103e14a0">COMPRA_VALIDADA</a></div><div class="ttdoc">Cliente cancelou a compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00047">fsm.h:47</a></div></div>
+<div class="ttc" id="fsm_8h_html_a344b87e35d49f9854793b13885e1066e"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a344b87e35d49f9854793b13885e1066e">TROCO_INSERIDO</a></div><div class="ttdoc">Repositor inseriu dinheiro na caixa de troco. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00053">fsm.h:53</a></div></div>
+<div class="ttc" id="fsm_8h_html_a959ef19cec55fc08739a619e776150c3"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a959ef19cec55fc08739a619e776150c3">MOSTRA_OPCOES</a></div><div class="ttdoc">Ação inicial, não utilizada em uma máquina física. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00064">fsm.h:64</a></div></div>
+<div class="ttc" id="fsm_8h_html_a10274519494252cac661e4e4fef1d89a"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a10274519494252cac661e4e4fef1d89a">PRODUTO_LIBERADO</a></div><div class="ttdoc">Máquina liberou produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00049">fsm.h:49</a></div></div>
+<div class="ttc" id="fsm_8h_html_a121e2b39b72704c90c1e4c761defba2e"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a121e2b39b72704c90c1e4c761defba2e">TROCO_LIBERADO</a></div><div class="ttdoc">Máquina liberou troco. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00050">fsm.h:50</a></div></div>
+<div class="ttc" id="fsm_8h_html_ae7b678267774e49bd57f2bafbceeb0ac"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ae7b678267774e49bd57f2bafbceeb0ac">LIBERACAO_PRODUTO</a></div><div class="ttdoc">Máquina irá liberar o produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00028">fsm.h:28</a></div></div>
+<div class="ttc" id="fsm_8c_html_a56fe90d39912cfa7e938c437dc278eb1"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a></div><div class="ttdeci">static fsm_acao_t fsm_acao_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00014">fsm.c:14</a></div></div>
+<div class="ttc" id="fsm_8h_html_a8f63159423107cadf1f0d7fa4c21849f"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a8f63159423107cadf1f0d7fa4c21849f">INICIALIZACAO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00043">fsm.h:43</a></div></div>
+<div class="ttc" id="fsm_8h_html_a6ac671cf924e21f96b65ea0abbfee904"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a6ac671cf924e21f96b65ea0abbfee904">DINHEIRO_INSERIDO</a></div><div class="ttdoc">Cliente inseriu dinheiro na máquina. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00045">fsm.h:45</a></div></div>
+<div class="ttc" id="fsm_8h_html_ab4bee518ef8759d9d1213f6f6b1be882"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ab4bee518ef8759d9d1213f6f6b1be882">COMPRA_CANCELADA</a></div><div class="ttdoc">Cliente cancelou a compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00048">fsm.h:48</a></div></div>
+<div class="ttc" id="fsm_8h_html_af6e4a90a4a7e46c98a5a12b965fb8354"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#af6e4a90a4a7e46c98a5a12b965fb8354">INICIO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00024">fsm.h:24</a></div></div>
+<div class="ttc" id="fsm_8h_html_a879973add0597b5198c786369fa6a225"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a879973add0597b5198c786369fa6a225">PROD_ID_INSERIDO</a></div><div class="ttdoc">Cliente inseriu código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00046">fsm.h:46</a></div></div>
+<div class="ttc" id="fsm_8h_html_ad8eab5bf94794d159e0be32e3373604d"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a></div><div class="ttdeci">#define NUM_ESTADOS</div><div class="ttdoc">Quantidade de estados existentes. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00081">fsm.h:81</a></div></div>
+<div class="ttc" id="fsm_8h_html_ac4ee4eed0d62a7f26a5a256e0c579b74"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ac4ee4eed0d62a7f26a5a256e0c579b74">CANCELA_COMPRA</a></div><div class="ttdoc">Cancela a compra e retorna ao estado inicial. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00071">fsm.h:71</a></div></div>
+<div class="ttc" id="fsm_8h_html_a1225a75b53010193d5df1b3c69820f64"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a1225a75b53010193d5df1b3c69820f64">NENHUMA_ACAO</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00063">fsm.h:63</a></div></div>
+<div class="ttc" id="fsm_8h_html_a71f0bdbdde51381f6e236f41c5101017"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a71f0bdbdde51381f6e236f41c5101017">AGUARDA_PROD_ID</a></div><div class="ttdoc">Máquina aguarda código do produto. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00026">fsm.h:26</a></div></div>
+<div class="ttc" id="fsm_8h_html_ac63c2a797e85bfdec824c66ea3f2aade"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#ac63c2a797e85bfdec824c66ea3f2aade">ENTRA_MANUTENCAO</a></div><div class="ttdoc">Entra no estado de manutenção. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00072">fsm.h:72</a></div></div>
+<div class="ttc" id="fsm_8h_html_a73685c89db026628fe9b99f12a31b8d2"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a73685c89db026628fe9b99f12a31b8d2">COMPRA_INICIADA</a></div><div class="ttdoc">Cliente escolheu iniciar a compra. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00044">fsm.h:44</a></div></div>
+<div class="ttc" id="fsm_8h_html_a37d6780667f914cdab18ce6304396411"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a37d6780667f914cdab18ce6304396411">FINALIZA_COMPRA</a></div><div class="ttdoc">Finaliza a compra e retorna ao estado inicial. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00070">fsm.h:70</a></div></div>
+<div class="ttc" id="fsm_8h_html_a681b2c1c5de9d11660df1ed580879927"><div class="ttname"><a href="../../dd/d81/fsm_8h.html#a681b2c1c5de9d11660df1ed580879927">LIBERA_TROCO</a></div><div class="ttdoc">Libera o troco necessário. </div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d81/fsm_8h_source.html#l00069">fsm.h:69</a></div></div>
+<div class="ttc" id="fsm_8c_html_aadd71e92c15f5812f57ef15404d9663e"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#aadd71e92c15f5812f57ef15404d9663e">fsm_registra_transicao</a></div><div class="ttdeci">void fsm_registra_transicao(fsm_estado_t estado, fsm_evento_t evento, fsm_acao_t acao, fsm_estado_t prox_estado)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00025">fsm.c:25</a></div></div>
 </div><!-- fragment --><div class="dynheader">
-Este é o diagrama das funções que utilizam esta função:</div>
+Este é o diagrama das funções utilizadas por esta função:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db8/fsm_8c_a6d28dcad43166c03b061f129a8759018_icgraph.svg" width="439" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db8/fsm_8c_a6d28dcad43166c03b061f129a8759018_cgraph.svg" width="344" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
-<a id="a17f1d0bc0f8f7d0e109dd45d28e72921"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17f1d0bc0f8f7d0e109dd45d28e72921">&#9670;&nbsp;</a></span>fsm_obter_acao()</h2>
+<a id="a6333686f3fb3b86490c72432702aec5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6333686f3fb3b86490c72432702aec5f">&#9670;&nbsp;</a></span>fsm_obter_acao()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/db0/sistema_8h.html#a662545d978f4974d0e135b292486db56">acao_t</a> fsm_obter_acao </td>
+          <td class="memname"><a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a> fsm_obter_acao </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8">estado_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>&#160;</td>
           <td class="paramname"><em>estado</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914">evento_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a>&#160;</td>
           <td class="paramname"><em>codigo_evento</em>&#160;</td>
         </tr>
         <tr>
@@ -183,35 +332,29 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00029">29</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
+<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00071">71</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d8/db8/fsm_8c_source.html#l00013">fsm_acao_transicao_estados</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                                               {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d8/db8/fsm_8c.html#a68eaa33906c70cd32f9538fe2b973fd6">fsm_acao_transicao_estados</a>[estado][codigo_evento];</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <span class="comment">// fsm_obter_acao</span></div><div class="ttc" id="fsm_8c_html_a68eaa33906c70cd32f9538fe2b973fd6"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#a68eaa33906c70cd32f9538fe2b973fd6">fsm_acao_transicao_estados</a></div><div class="ttdeci">static acao_t fsm_acao_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00013">fsm.c:13</a></div></div>
-</div><!-- fragment --><div class="dynheader">
-Este é o diagrama das funções que utilizam esta função:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db8/fsm_8c_a17f1d0bc0f8f7d0e109dd45d28e72921_icgraph.svg" width="248" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<p class="reference">Referências <a class="el" href="../../d8/db8/fsm_8c_source.html#l00014">fsm_acao_transicao_estados</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                                           {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a>[estado][codigo_evento];</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;} <span class="comment">// fsm_obter_acao</span></div><div class="ttc" id="fsm_8c_html_a56fe90d39912cfa7e938c437dc278eb1"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a></div><div class="ttdeci">static fsm_acao_t fsm_acao_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00014">fsm.c:14</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
-
-</div>
-</div>
-<a id="ab1c78c9c801d6c70d674a1a040dd1662"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1c78c9c801d6c70d674a1a040dd1662">&#9670;&nbsp;</a></span>fsm_obter_proximo_estado()</h2>
+<a id="a46ac18de87ce6e6447811e2b506a5f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ac18de87ce6e6447811e2b506a5f19">&#9670;&nbsp;</a></span>fsm_obter_proximo_estado()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8">estado_t</a> fsm_obter_proximo_estado </td>
+          <td class="memname"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> fsm_obter_proximo_estado </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8">estado_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>&#160;</td>
           <td class="paramname"><em>estado</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../db/db0/sistema_8h.html#a1f1fde62c955c2fe4b5ea8e0dda57914">evento_t</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a>&#160;</td>
           <td class="paramname"><em>codigo_evento</em>&#160;</td>
         </tr>
         <tr>
@@ -222,22 +365,67 @@ Este é o diagrama das funções que utilizam esta função:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00033">33</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
+<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00075">75</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
 
-<p class="reference">Referências <a class="el" href="../../d8/db8/fsm_8c_source.html#l00014">fsm_proximo_estado_transicao_estados</a>.</p>
-<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                                                           {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d8/db8/fsm_8c.html#a3a18690465bfb194e3765ca7d02f70f9">fsm_proximo_estado_transicao_estados</a>[estado][codigo_evento];</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <span class="comment">// obterAcao</span></div><div class="ttc" id="fsm_8c_html_a3a18690465bfb194e3765ca7d02f70f9"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#a3a18690465bfb194e3765ca7d02f70f9">fsm_proximo_estado_transicao_estados</a></div><div class="ttdeci">static estado_t fsm_proximo_estado_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00014">fsm.c:14</a></div></div>
+<p class="reference">Referências <a class="el" href="../../d8/db8/fsm_8c_source.html#l00015">fsm_proximo_estado_transicao_estados</a>.</p>
+<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                                                                       {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a>[estado][codigo_evento];</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;} <span class="comment">// fsm_obter_proximo_estado</span></div><div class="ttc" id="fsm_8c_html_aaad03592359b5d77cb354d7fc210bb57"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a></div><div class="ttdeci">static fsm_estado_t fsm_proximo_estado_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00015">fsm.c:15</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aadd71e92c15f5812f57ef15404d9663e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadd71e92c15f5812f57ef15404d9663e">&#9670;&nbsp;</a></span>fsm_registra_transicao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fsm_registra_transicao </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>&#160;</td>
+          <td class="paramname"><em>estado</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#adeaf8ddb06bb5b94854f6ddaef28b469">fsm_evento_t</a>&#160;</td>
+          <td class="paramname"><em>evento</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a>&#160;</td>
+          <td class="paramname"><em>acao</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a>&#160;</td>
+          <td class="paramname"><em>prox_estado</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00025">25</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
+
+<p class="reference">Referências <a class="el" href="../../d8/db8/fsm_8c_source.html#l00014">fsm_acao_transicao_estados</a> e <a class="el" href="../../d8/db8/fsm_8c_source.html#l00015">fsm_proximo_estado_transicao_estados</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                                                                                                {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a>[estado][evento] = acao;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a>[estado][evento] = prox_estado;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;}</div><div class="ttc" id="fsm_8c_html_aaad03592359b5d77cb354d7fc210bb57"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#aaad03592359b5d77cb354d7fc210bb57">fsm_proximo_estado_transicao_estados</a></div><div class="ttdeci">static fsm_estado_t fsm_proximo_estado_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00015">fsm.c:15</a></div></div>
+<div class="ttc" id="fsm_8c_html_a56fe90d39912cfa7e938c437dc278eb1"><div class="ttname"><a href="../../d8/db8/fsm_8c.html#a56fe90d39912cfa7e938c437dc278eb1">fsm_acao_transicao_estados</a></div><div class="ttdeci">static fsm_acao_t fsm_acao_transicao_estados[NUM_ESTADOS][NUM_EVENTOS]</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/db8/fsm_8c_source.html#l00014">fsm.c:14</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Este é o diagrama das funções que utilizam esta função:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db8/fsm_8c_ab1c78c9c801d6c70d674a1a040dd1662_icgraph.svg" width="328" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d8/db8/fsm_8c_aadd71e92c15f5812f57ef15404d9663e_icgraph.svg" width="344" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Variáveis</h2>
-<a id="a68eaa33906c70cd32f9538fe2b973fd6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a68eaa33906c70cd32f9538fe2b973fd6">&#9670;&nbsp;</a></span>fsm_acao_transicao_estados</h2>
+<a id="a56fe90d39912cfa7e938c437dc278eb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56fe90d39912cfa7e938c437dc278eb1">&#9670;&nbsp;</a></span>fsm_acao_transicao_estados</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -246,31 +434,7 @@ Este é o diagrama das funções que utilizam esta função:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/db0/sistema_8h.html#a662545d978f4974d0e135b292486db56">acao_t</a> fsm_acao_transicao_estados[<a class="el" href="../../db/db0/sistema_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>][<a class="el" href="../../db/db0/sistema_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00013">13</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
-
-</div>
-</div>
-<a id="a3a18690465bfb194e3765ca7d02f70f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a18690465bfb194e3765ca7d02f70f9">&#9670;&nbsp;</a></span>fsm_proximo_estado_transicao_estados</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/db0/sistema_8h.html#a1f7a31172c7aa2767bce5f65c351cdf8">estado_t</a> fsm_proximo_estado_transicao_estados[<a class="el" href="../../db/db0/sistema_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>][<a class="el" href="../../db/db0/sistema_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>]</td>
+          <td class="memname"><a class="el" href="../../d7/da5/classFSM.html#af64b9841d621cc3c8d9ed630bca717f5">fsm_acao_t</a> fsm_acao_transicao_estados[<a class="el" href="../../dd/d81/fsm_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>][<a class="el" href="../../dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>]</td>
         </tr>
       </table>
   </td>
@@ -284,13 +448,37 @@ Este é o diagrama das funções que utilizam esta função:</div>
 
 </div>
 </div>
+<a id="aaad03592359b5d77cb354d7fc210bb57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaad03592359b5d77cb354d7fc210bb57">&#9670;&nbsp;</a></span>fsm_proximo_estado_transicao_estados</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/da5/classFSM.html#a5367a689bb3f8c869340f436514a071f">fsm_estado_t</a> fsm_proximo_estado_transicao_estados[<a class="el" href="../../dd/d81/fsm_8h.html#ad8eab5bf94794d159e0be32e3373604d">NUM_ESTADOS</a>][<a class="el" href="../../dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1">NUM_EVENTOS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definição na linha <a class="el" href="../../d8/db8/fsm_8c_source.html#l00015">15</a> do arquivo <a class="el" href="../../d8/db8/fsm_8c_source.html">fsm.c</a>.</p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../d8/db8/fsm_8c.html">fsm.c</a></li>
-    <li class="footer">Gerado em Segunda, 4 de Maio de 2020 23:43:29 para Vending Machine por
+    <li class="footer">Gerado em Terça, 5 de Maio de 2020 22:59:03 para Vending Machine por
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.13 </li>
   </ul>

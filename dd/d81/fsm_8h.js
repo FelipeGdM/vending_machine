@@ -1,6 +1,6 @@
 var fsm_8h =
 [
-    [ "fsm_init", "dd/d81/fsm_8h.html#a6d28dcad43166c03b061f129a8759018", null ],
-    [ "fsm_obter_acao", "dd/d81/fsm_8h.html#a17f1d0bc0f8f7d0e109dd45d28e72921", null ],
-    [ "fsm_obter_proximo_estado", "dd/d81/fsm_8h.html#ab1c78c9c801d6c70d674a1a040dd1662", null ]
+    [ "NUM_ACOES", "dd/d81/fsm_8h.html#a3fc333e21d4873531a590e71946a5746", null ],
+    [ "NUM_ESTADOS", "dd/d81/fsm_8h.html#ad8eab5bf94794d159e0be32e3373604d", null ],
+    [ "NUM_EVENTOS", "dd/d81/fsm_8h.html#a6179415cb58b23d7808fcca9583d8ce1", null ]
 ];
