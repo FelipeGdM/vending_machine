@@ -27,7 +27,7 @@ uint8_t caixa_troco_existe_troco(dinheiro_t quantia){
 uint8_t caixa_troco_emite_troco(dinheiro_t troco){
     display_exibe_msg("=> Libera ");
     display_dinheiro(troco);
-    display_exibe_msg("de troco\n");
+    display_exibe_msg(" de troco\n");
 
     troco_interno.reais -= troco.reais;
     troco_interno.centavos -= troco.centavos;
@@ -35,10 +35,13 @@ uint8_t caixa_troco_emite_troco(dinheiro_t troco){
     return 0;
 };
 
-uint8_t caixa_troco_insere_troco(dinheiro_t quantia){
+uint8_t caixa_troco_insere_troco(dinheiro_t* quantia){
 
-    troco_interno.reais += quantia.reais;
-    troco_interno.centavos += quantia.centavos;
+    troco_interno.reais += quantia->reais;
+    troco_interno.centavos += quantia->centavos;
+
+    quantia->reais = 0;
+    quantia->centavos = 0;
 
     return 0;
 };

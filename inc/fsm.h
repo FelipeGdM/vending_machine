@@ -22,13 +22,13 @@
  */
 typedef enum{
     INICIO,
-    AGUARDA_DINHEIRO,   ///< Máquina aguarda código do produto
-    AGUARDA_PROD_ID,    ///< Máquina aguarda código do produto
-    VALIDACAO_COMPRA,
-    LIBERACAO_PRODUTO,     ///< Máquina irá liberar o produto
-    LIBERACAO_TROCO,       ///< Máquina irá liberar o troco
-    CANCELAMENTO_COMPRA,   ///< Máquina irá cancelar a compra e retornar ao início
-    MANUTENCAO,         ///< Estado de manutenção da máquina
+    AGUARDA_DINHEIRO,       ///< Máquina aguarda código do produto
+    AGUARDA_PROD_ID,        ///< Máquina aguarda código do produto
+    VALIDACAO_COMPRA,       ///< Máquina confere se a combinação de id e dinheiro é válida
+    LIBERACAO_PRODUTO,      ///< Máquina irá liberar o produto
+    LIBERACAO_TROCO,        ///< Máquina irá liberar o troco
+    CANCELAMENTO_COMPRA,    ///< Máquina irá cancelar a compra e retornar ao início
+    MANUTENCAO,             ///< Estado de manutenção da máquina
     ATUALIZACAO_TROCO,
     ULTIMO_ESTADO
 } fsm_estado_t;
@@ -41,6 +41,7 @@ typedef enum{
 typedef enum{
     NENHUM_EVENTO = -1,
     INICIALIZACAO,
+    COMPRA_INICIADA,     ///< Cliente escolheu iniciar a compra
     DINHEIRO_INSERIDO,   ///< Cliente inseriu dinheiro na máquina
     PROD_ID_INSERIDO,    ///< Cliente inseriu código do produto
     COMPRA_VALIDADA,     ///< Cliente cancelou a compra
@@ -60,13 +61,17 @@ typedef enum{
  */
 typedef enum{
     NENHUMA_ACAO = -1,
-    PEDE_DINHEIRO,  ///< Pede ao cliente inserir o dinheiro necessário
-    PEDE_PROD_ID,   ///< Pede ao cliente inserir o código do produto
-    CONFERE_COMPRA,
-    LIBERA_PRODUTO, ///< Libera o produto pedido
-    LIBERA_TROCO,   ///< Libera o troco necessário
-    FINALIZA_COMPRA,
-    CANCELA_COMPRA, ///< Cancela a compra
+    MOSTRA_OPCOES,      ///< Ação inicial, não utilizada em uma máquina física
+    PEDE_DINHEIRO,      ///< Pede ao cliente inserir o dinheiro necessário
+    PEDE_PROD_ID,       ///< Pede ao cliente inserir o código do produto
+    CONFERE_COMPRA,     ///< Executa verificação da validade da compra
+    LIBERA_PRODUTO,     ///< Libera o produto pedido
+    LIBERA_TROCO,       ///< Libera o troco necessário
+    FINALIZA_COMPRA,    ///< Finaliza a compra e retorna ao estado inicial
+    CANCELA_COMPRA,     ///< Cancela a compra e retorna ao estado inicial
+    ENTRA_MANUTENCAO,   ///< Entra no estado de manutenção
+    ATUALIZA_TROCO,     ///< Atualiza a informação de troco disponível
+    SAI_MANUTENCAO,     ///< Sai do estado de manutenção
     ULTIMA_ACAO
 } fsm_acao_t;
 

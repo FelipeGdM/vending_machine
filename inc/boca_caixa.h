@@ -29,6 +29,15 @@ void boca_caixa_init();
  *
  * @return dinheiro_t
  */
-void boca_caixa_recebe_dinheiro(dinheiro_t* entrada);
+uint8_t boca_caixa_recebe_notas(dinheiro_t* entrada);
+
+/**
+ * @memberof "Boca Caixa"
+ *
+ * @brief Recebe uma quantia de dinheiro
+ *
+ * @return dinheiro_t
+ */
+uint8_t boca_caixa_recebe_moedas(dinheiro_t* entrada);
 
 #endif // __BOCA_CAIXA_H__

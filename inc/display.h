@@ -12,6 +12,7 @@
 #ifndef __DISPLAY_H__
 
 #include <stdint.h>
+#include <stdio.h>
 
 /**
  * @brief Imprime na tela uma quantia de dinheiro formatada com R$

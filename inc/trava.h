@@ -29,7 +29,6 @@ static bool trava_aberta;
 
 /**
  * @memberof Trava
- * 
  * @brief Função de inicialização do componente
  *
  */
@@ -37,7 +36,6 @@ void trava_init();
 
 /**
  * @memberof Trava
- * 
  * @brief Retorna o estado da trava
  *
  * @return true Se a trava estiver aberta

@@ -6,8 +6,8 @@
 
 #include <stdint.h>
 
-
-
+#define OK 0
+#define FALHA_HARDWARE 1
 
 typedef struct{
     uint8_t reais;

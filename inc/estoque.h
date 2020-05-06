@@ -4,14 +4,15 @@
  * @author Felipe Gomes de Melo <felipegmelo@usp.br>
  * @brief Funções de controle dos dadaos guardados na memória da vending machine
  * @date 04/2020
- * 
+ *
  * @copyright MIT License - Copyright (c) 2020
- * 
+ *
  */
 
 #ifndef __ESTOQUE_H__
 #define __ESTOQUE_H__
 
+#include "sistema.h"
 #include <stdint.h>
 
 /**
@@ -46,9 +47,15 @@
  */
 #define ID_JA_EXISTE 0xFD
 
+/**
+ * @brief [errno] Não é possível efetuar a compra pois o dinehiro
+ * é insuficiente
+ */
+#define DINHEIRO_INSUFICIENTE 0xFC
+
 typedef struct{
     uint8_t id;          ///< Identificador do produto
-    uint8_t quantidade;  ///< Quantidade de produto existente
+    uint16_t preco;      ///< Quantidade de produto existente
     char nome[NOME_TAM]; ///< Identificador legível do produto
 }produto_t;
 
@@ -56,7 +63,7 @@ typedef struct{
  * @memberof Estoque
  *
  * @brief Variável que guarda os dados do estoque
- * 
+ *
  */
 static produto_t banco_dados[ESTOQUE_TAM];
 
@@ -81,11 +88,11 @@ void estoque_init();
  *
  * @return 0 se bem sucedido, ou o código de erro caso contrário
  */
-uint8_t estoque_produto_add(uint8_t id, uint8_t quantidade, char* nome);
+uint8_t estoque_produto_add(uint8_t id, uint16_t preco, char* nome);
 
 /**
  * @memberof Estoque
- * 
+ *
  * @brief Imprime na tela uma lista dos produtos cadastrados
  */
 void estoque_dump();
@@ -100,5 +107,17 @@ void estoque_dump();
  * @return Índice do produto no estoque, se o produto existir
  */
 uint8_t estoque_index_from_id(uint8_t id);
+
+/**
+ * @memberof Estoque
+ *
+ * @brief Define se os dados inseridos pelos clientes configuram
+ * uma compra válida
+ *
+ * @param id Código do produto
+ * @param entrada Dinheiro inserido
+ * @return uint8_t 0 se a compra é válida, 1 caso contrário
+ */
+uint8_t estoque_compra_valida(uint8_t id, dinheiro_t entrada);
 
 #endif // __ESTOQUE_H__

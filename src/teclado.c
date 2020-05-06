@@ -20,8 +20,7 @@ void teclado_le_entrada(char* buffer) {
     scanf("%s", buffer);
 }
 
-uint8_t teclado_le_prod_id() {
-    uint8_t output;
-    scanf("%hhu", &output);
-    return output;
+uint8_t teclado_le_prod_id(uint8_t* output) {
+    scanf("%hhu", output);
+    return 0;
 }

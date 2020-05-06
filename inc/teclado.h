@@ -23,14 +23,7 @@
 void teclado_init();
 
 /**
- * @brief
- *
- * @param buffer
- */
-void teclado_le_entrada(char* buffer);
-
-/**
- * @class Teclado
+ * @memberof Teclado
  *
  * @brief Lê o código de produto digitado pelo usuário
  *

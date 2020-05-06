@@ -22,8 +22,8 @@ void fsm_acao_para_todo_evento(fsm_estado_t estado, fsm_acao_t acao){
 #define fsm_conecta_estado_evento_acao(estado, evento, acao) fsm_acao_transicao_estados[estado][evento] = acao
 #define fsm_transicao_estado(estado, evento, prox_estado) fsm_proximo_estado_transicao_estados[estado][evento] = prox_estado;
 
-void fsm_registra_transicao(estado_t estado, evento_t evento, acao_t acao, estado_t prox_estado){
-    fsm_acao_transicao_estados[estado][evento] = acao
+void fsm_registra_transicao(fsm_estado_t estado, fsm_evento_t evento, fsm_acao_t acao, fsm_estado_t prox_estado){
+    fsm_acao_transicao_estados[estado][evento] = acao;
     fsm_proximo_estado_transicao_estados[estado][evento] = prox_estado;
 }
 
@@ -38,7 +38,7 @@ void fsm_init(){
         }
     }
 
-    fsm_registra_transicao(INICIO, INICIALIZACAO, PEDE_DINHEIRO, AGUARDA_DINHEIRO);
+    fsm_registra_transicao(INICIO, COMPRA_INICIADA, PEDE_DINHEIRO, AGUARDA_DINHEIRO);
 
     fsm_registra_transicao(AGUARDA_DINHEIRO, DINHEIRO_INSERIDO, PEDE_PROD_ID, AGUARDA_PROD_ID);
 
@@ -51,6 +51,20 @@ void fsm_init(){
     fsm_registra_transicao(LIBERACAO_TROCO, TROCO_LIBERADO, FINALIZA_COMPRA, INICIO);
 
     fsm_registra_transicao(VALIDACAO_COMPRA, COMPRA_CANCELADA, CANCELA_COMPRA, INICIO);
+
+    fsm_registra_transicao(INICIO, INICIALIZACAO, MOSTRA_OPCOES, INICIO);
+
+    fsm_registra_transicao(INICIO, MAQUINA_ABERTA, ENTRA_MANUTENCAO, MANUTENCAO);
+
+    fsm_registra_transicao(MANUTENCAO, MAQUINA_ABERTA, ENTRA_MANUTENCAO, MANUTENCAO);
+
+    fsm_registra_transicao(MANUTENCAO, TROCO_INSERIDO, ATUALIZA_TROCO, ATUALIZACAO_TROCO);
+
+    fsm_registra_transicao(ATUALIZACAO_TROCO, MAQUINA_ABERTA, SAI_MANUTENCAO, MANUTENCAO);
+
+    fsm_registra_transicao(ATUALIZACAO_TROCO, MAQUINA_FECHADA, SAI_MANUTENCAO, MANUTENCAO);
+
+    fsm_registra_transicao(MANUTENCAO, MAQUINA_FECHADA, SAI_MANUTENCAO, INICIO);
 
 } // fsm_init
 
